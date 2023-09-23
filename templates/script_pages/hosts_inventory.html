@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Inventario de equipos en esta red{% endblock %}
+{% block content %}
+<div class="row">
+	<h2 class="text-center mb-3">Lista de equipos en esta red</h2>
+</div>
+<div class="card">
+	<div class="card-header">
+		<h5 class="card-title">PC - Nombre</h5>
+		<p>x.x.x.x</p>
+	</div>
+	<div class="card-body ">
+		<div class="accordion" id="accordionExample1">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingOne">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+						Pcs
+					</button>
+				</h2>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
