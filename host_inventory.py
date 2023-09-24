@@ -2,7 +2,7 @@ import json
 import os
 import socket
 import nmap
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, redirect, url_for
 from utils import get_local_path,get_network,get_host_name
 
 
@@ -28,6 +28,8 @@ def scan_network(ip_range):
                     break
     return pcs
     
+
+
 def list_host():
     local_net=get_network()
     path_file=get_local_path() + '/database/'+ local_net.replace('.','_') + '.json'
@@ -41,7 +43,18 @@ def list_host():
             file.write(json.dumps(list_hosts))
     return list_hosts
     
+@host_inventory_bp.route('/re_scan')
+def re_scan():
+    path_file=get_local_path() + '/database/'+ get_network().replace('.','_') + '.json'
+    if os.path.isfile(path_file):
+        os.remove(path_file)
+    return redirect(url_for('host_inventory.index'))
+
 @host_inventory_bp.route('/')
 def index():
     list_pcs=list_host()
-    return render_template('script_pages/hosts_inventory.html')
+    print(list_pcs)
+    if isinstance(list_pcs, dict) and len(list_pcs) != 0:
+        if not isinstance(list_pcs[0], dict):
+            list_pcs = json.loads(list_pcs[0])
+    return render_template('script_pages/hosts_inventory.html', list_hosts = list_pcs)
