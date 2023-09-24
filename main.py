@@ -8,10 +8,12 @@ from reg_cleaning import reg_cleaning_bp
 from updates_inventory import updates_inventory_bp
 from updates_installer import updates_installer_bp
 from app_uninstaller import app_uninstaller_bp
+from host_inventory import host_inventory_bp
 from site_blocker import site_blocker_bp
 
 app = Flask(__name__)
 
+app.register_blueprint(host_inventory_bp, url_prefix='/host_inventory')
 app.register_blueprint(app_inventory_bp, url_prefix='/app_inventory')
 app.register_blueprint(temps_cleaning_bp, url_prefix='/temps_cleaning')
 app.register_blueprint(reg_cleaning_bp, url_prefix='/reg_cleaning')
