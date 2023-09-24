@@ -16,10 +16,6 @@
                 "IdentifyingNumber": "{90160000-007E-0000-1000-0000000FF1CE}"
             },
             {
-                "Name": "Microsoft .NET Framework 4.5.1 Multi-Targeting Pack",
-                "IdentifyingNumber": "{6A0C6700-EA93-372C-8871-DCCF13D160A4}"
-            },
-            {
                 "Name": "Python 3.7.8 pip Bootstrap (64-bit)",
                 "IdentifyingNumber": "{AD820C10-4106-47D5-B6BD-4B3CEA93E429}"
             },
@@ -40,16 +36,8 @@
                 "IdentifyingNumber": "{8F40AC80-5BCE-4D4D-B6A4-C69330B3F140}"
             },
             {
-                "Name": "Microsoft .NET Core AppHost Pack - 3.1.9 (x64_arm64)",
-                "IdentifyingNumber": "{74927E80-0A12-457B-B8A9-48684A409385}"
-            },
-            {
                 "Name": "MSI Development Tools",
                 "IdentifyingNumber": "{DB4DB790-64DD-1902-4BF2-833B3B6DBCA1}"
-            },
-            {
-                "Name": "Microsoft ASP.NET Core Module V2 for IIS Express",
-                "IdentifyingNumber": "{FD58C5B0-8CD3-4B7E-B5F3-B7702C106920}"
             },
             {
                 "Name": "Python 3.7.8 Standard Library (64-bit)",
@@ -64,10 +52,6 @@
                 "IdentifyingNumber": "{CFB1DBC0-D653-4B4D-8CB6-935645BBA6A2}"
             },
             {
-                "Name": "Microsoft .NET Framework 4.5 Multi-Targeting Pack",
-                "IdentifyingNumber": "{56E962F0-4FB0-3C67-88DB-9EAA6EEFC493}"
-            },
-            {
                 "Name": "Windows SDK Desktop Tools x64",
                 "IdentifyingNumber": "{795E8F11-37DE-611E-921E-7D70BE09BF7B}"
             },
@@ -78,18 +62,6 @@
             {
                 "Name": "WinRT Intellisense UAP - Other Languages",
                 "IdentifyingNumber": "{250D5341-0879-4016-399C-BBCD87B80E95}"
-            },
-            {
-                "Name": "Microsoft ASP.NET Diagnostic Pack for Visual Studio",
-                "IdentifyingNumber": "{8FC40961-E75E-3E89-B14D-4BC026B7B693}"
-            },
-            {
-                "Name": "Microsoft .NET CoreRuntime For CoreCon",
-                "IdentifyingNumber": "{48A8F171-52F2-372B-8414-EA50617708BE}"
-            },
-            {
-                "Name": "Microsoft Windows Desktop Runtime - 5.0.0 (x64)",
-                "IdentifyingNumber": "{B4FC1E81-3264-49A2-80C7-24C296546D67}"
             },
             {
                 "Name": "Windows SDK AddOn",
@@ -112,36 +84,12 @@
                 "IdentifyingNumber": "{4CA7ABF1-DB68-0F9E-5AD9-58550198D0AC}"
             },
             {
-                "Name": "Microsoft .NET AppHost Pack - 5.0.0 (x64_arm)",
-                "IdentifyingNumber": "{4C0A9312-F17A-445C-A6C3-D366739330C6}"
-            },
-            {
-                "Name": "Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.28.29334",
-                "IdentifyingNumber": "{0D01A812-82A1-481F-8546-8E28E976F8DF}"
-            },
-            {
-                "Name": "Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005",
-                "IdentifyingNumber": "{13A4EE12-23EA-3371-91EE-EFB36DDFFF3E}"
-            },
-            {
                 "Name": "Windows SDK EULA",
                 "IdentifyingNumber": "{5F56BF12-0818-B58A-5862-939784E12F8B}"
             },
             {
-                "Name": "Microsoft .NET Core 2.1 Templates 5.0.100 (x64)",
-                "IdentifyingNumber": "{3CEF9222-4C16-4C15-BCA3-EC0A0C980FBC}"
-            },
-            {
-                "Name": "Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005",
-                "IdentifyingNumber": "{F8CFEB22-A2E7-3971-9EDA-4B11EDEFC185}"
-            },
-            {
                 "Name": "IntelliTraceProfilerProxy",
                 "IdentifyingNumber": "{1C92D642-AD8C-4319-8E7B-5D6AA55F430B}"
-            },
-            {
-                "Name": "Microsoft ASP.NET Web Tools Packages 16.0 - ESN",
-                "IdentifyingNumber": "{7A3DFC42-619B-391E-A335-EF728C4C40B0}"
             },
             {
                 "Name": "vs_clickoncebootstrappermsires",
@@ -150,10 +98,6 @@
             {
                 "Name": "Python Launcher",
                 "IdentifyingNumber": "{B25A5062-540A-4141-80D3-50FA598523F3}"
-            },
-            {
-                "Name": "Microsoft Azure Storage Emulator - v5.10",
-                "IdentifyingNumber": "{41AC2282-F083-4495-8306-2D6ABC7D5CA2}"
             },
             {
                 "Name": "Windows SDK ARM Desktop Tools",
@@ -168,16 +112,8 @@
                 "IdentifyingNumber": "{8B474A92-CE3A-4F46-B6F1-6DFA1390F826}"
             },
             {
-                "Name": "Microsoft ASP.NET Core 3.1.8 Targeting Pack (x64)",
-                "IdentifyingNumber": "{23113BA2-40A2-3526-B3DF-5E16C563CABA}"
-            },
-            {
                 "Name": "Citrix Workspace(USB)",
                 "IdentifyingNumber": "{764ECCB2-0809-407D-8CC8-6719D3D079D4}"
-            },
-            {
-                "Name": "Microsoft .NET Targeting Pack - 5.0.0 (x64)",
-                "IdentifyingNumber": "{34761DB2-89B9-4981-8122-5B1FAE3B7069}"
             },
             {
                 "Name": "Windows Mobile Extension SDK Contracts",
@@ -208,10 +144,6 @@
                 "IdentifyingNumber": "{54FE4D23-11A2-F1C4-76E9-79C8FB40A4A1}"
             },
             {
-                "Name": "Microsoft ASP.NET Core 5.0.0 Shared Framework (x86)",
-                "IdentifyingNumber": "{6BD7DD23-C813-3592-931C-74A5812AF305}"
-            },
-            {
                 "Name": "Open XML SDK 2.5 for Microsoft Office",
                 "IdentifyingNumber": "{3EA16E23-14D2-466A-8268-D7CD40DC46B6}"
             },
@@ -224,20 +156,12 @@
                 "IdentifyingNumber": "{52CE7A43-B499-5F4B-A525-AA8794D3580F}"
             },
             {
-                "Name": "Microsoft Workflow Diagnostic Pack for x64",
-                "IdentifyingNumber": "{517F40B3-0DF1-3CEA-8E38-E3E515DACE4F}"
-            },
-            {
                 "Name": "Citrix Workspace(Aero)",
                 "IdentifyingNumber": "{79F9C0D3-3736-4E52-92B9-5EB4BBEF02C9}"
             },
             {
                 "Name": "vs_FileTracker_Singleton",
                 "IdentifyingNumber": "{3C4B2ED3-2296-4203-A420-AC042BE8484D}"
-            },
-            {
-                "Name": "Microsoft ASP.NET Core Module for IIS Express",
-                "IdentifyingNumber": "{FAFEE5E3-E00A-4CE8-B495-8F66A5FAB236}"
             },
             {
                 "Name": "SDK ARM Redistributables",
@@ -252,16 +176,8 @@
                 "IdentifyingNumber": "{AFE93A24-F5E9-4E53-BBFE-AF54AA25FBFF}"
             },
             {
-                "Name": "Microsoft TestPlatform SDK Local Feed",
-                "IdentifyingNumber": "{A3766534-01E5-41FA-A9EA-E1A4CD5DE2CF}"
-            },
-            {
                 "Name": "Python 3.7.8 Test Suite (64-bit)",
                 "IdentifyingNumber": "{FE029834-AD26-45F1-B622-8DE59A8B1048}"
-            },
-            {
-                "Name": "Microsoft Web Deploy 4.0",
-                "IdentifyingNumber": "{2EC26D34-FB67-4C58-AC20-235697551222}"
             },
             {
                 "Name": "Workflow Manager Client 1.0",
@@ -270,18 +186,6 @@
             {
                 "Name": "Active Directory Authentication Library for SQL Server",
                 "IdentifyingNumber": "{31D1C054-08DC-4509-B621-2024938AABB1}"
-            },
-            {
-                "Name": "Microsoft Visual Studio Setup Configuration",
-                "IdentifyingNumber": "{CBD54374-141A-4C71-AE46-3870CC7F0838}"
-            },
-            {
-                "Name": "Microsoft .NET Host - 5.0.0 (x64)",
-                "IdentifyingNumber": "{1D88C674-5064-4E7F-BB8C-1E6F8374C35D}"
-            },
-            {
-                "Name": "Microsoft .NET CoreRuntime SDK",
-                "IdentifyingNumber": "{12702494-9E6A-3F5E-9441-2B7D258A639B}"
             },
             {
                 "Name": "Windows Mobile Extension SDK",
@@ -296,24 +200,12 @@
                 "IdentifyingNumber": "{6B03A6A4-643C-57CE-CA6F-4E19BF47497A}"
             },
             {
-                "Name": "Microsoft Visual Studio 2010 Tools for Office Runtime (x64)",
-                "IdentifyingNumber": "{9495AEB4-AB97-39DE-8C42-806EEF75ECA7}"
-            },
-            {
-                "Name": "Microsoft Windows Desktop Runtime - 3.1.9 (x64)",
-                "IdentifyingNumber": "{FF2DDED4-D1D8-4B61-84D6-B63A3041115F}"
-            },
-            {
                 "Name": "Cisco AnyConnect Secure Mobility Client",
                 "IdentifyingNumber": "{80416A15-214B-4F25-A025-ED6E875631F2}"
             },
             {
                 "Name": "icecap_collection_neutral",
                 "IdentifyingNumber": "{7C703135-98AC-4EB9-86C0-0C3169C99649}"
-            },
-            {
-                "Name": "Microsoft .NET Framework 4.8 SDK",
-                "IdentifyingNumber": "{949C0535-171C-480F-9CF4-D25C9E60FE88}"
             },
             {
                 "Name": "Citrix Workspace Inside",
@@ -344,16 +236,8 @@
                 "IdentifyingNumber": "{A5EF45C5-FA27-7E8F-1AE8-E3D39BAC779E}"
             },
             {
-                "Name": "Microsoft ASP.NET Core 3.1.9 Shared Framework (x64)",
-                "IdentifyingNumber": "{75F6ACD5-0D7B-3C0F-B9C5-893881B31156}"
-            },
-            {
                 "Name": "Python 3.7.8 Documentation (64-bit)",
                 "IdentifyingNumber": "{A90E9216-6C61-4A2B-A18E-85EF9DF6A2C0}"
-            },
-            {
-                "Name": "Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005",
-                "IdentifyingNumber": "{929FBD26-9020-399B-9A7A-751D61F0B942}"
             },
             {
                 "Name": "vs_vswebprotocolselectormsi",
@@ -376,24 +260,12 @@
                 "IdentifyingNumber": "{9F7B0D96-881D-8850-C303-43F3A08E6902}"
             },
             {
-                "Name": "Microsoft Azure Libraries for .NET - v2.9",
-                "IdentifyingNumber": "{C5C91AA6-3E83-430E-8B7A-6B790083F28D}"
-            },
-            {
                 "Name": "vs_filehandler_x86",
                 "IdentifyingNumber": "{8990F1B6-F880-4E73-A2D9-7A611F4C38A1}"
             },
             {
-                "Name": "Microsoft Windows Desktop Targeting Pack - 5.0.0 (x64)",
-                "IdentifyingNumber": "{B7846BB6-4EDE-409B-9147-631286EF7FDD}"
-            },
-            {
                 "Name": "Windows IoT Extension SDK Contracts",
                 "IdentifyingNumber": "{3CEE8EB6-538E-DDA2-51A5-842ECE6CE1E8}"
-            },
-            {
-                "Name": "Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.21005",
-                "IdentifyingNumber": "{A749D8E6-B613-3BE3-8F5F-045C84EBA29B}"
             },
             {
                 "Name": "Windows SDK for Windows Store Apps Tools",
@@ -416,20 +288,12 @@
                 "IdentifyingNumber": "{873B2737-D587-4FC9-993D-086DBF507461}"
             },
             {
-                "Name": "Microsoft ASP.NET Core 5.0.0 Shared Framework (x64)",
-                "IdentifyingNumber": "{42FA1C47-718A-3946-9570-144D5B9FAFA9}"
-            },
-            {
                 "Name": "Node.js",
                 "IdentifyingNumber": "{2DFAC857-A66A-4D1A-900C-B36DC56C2E76}"
             },
             {
                 "Name": "Windows SDK for Windows Store Apps",
                 "IdentifyingNumber": "{39692B57-0BA8-2197-8BC5-4108DFB8475A}"
-            },
-            {
-                "Name": "Microsoft Visual Studio Setup WMI Provider",
-                "IdentifyingNumber": "{E5629267-C38E-4899-931E-A734A1499223}"
             },
             {
                 "Name": "IntelliTraceProfilerProxy",
@@ -444,10 +308,6 @@
                 "IdentifyingNumber": "{63AAA877-5536-9481-2385-28A082100D78}"
             },
             {
-                "Name": "Microsoft .NET Core AppHost Pack - 3.1.9 (x64_arm)",
-                "IdentifyingNumber": "{DE2C9387-D0C2-4E7D-84C7-F702E76C5F78}"
-            },
-            {
                 "Name": "Universal General MIDI DLS Extension SDK",
                 "IdentifyingNumber": "{6F54BF87-2EE6-FA6D-431D-33A665992D49}"
             },
@@ -458,14 +318,6 @@
             {
                 "Name": "Python 3.7.8 Tcl/Tk Support (64-bit symbols)",
                 "IdentifyingNumber": "{833EA197-6356-48B6-9E90-AE2D2CCC5479}"
-            },
-            {
-                "Name": "Microsoft .NET Framework 4.6 Targeting Pack",
-                "IdentifyingNumber": "{2CC6A4A7-AAC2-46C9-9DBB-3727B5954F65}"
-            },
-            {
-                "Name": "Microsoft NetStandard SDK",
-                "IdentifyingNumber": "{737FDDA7-B944-4CB5-92D9-3D56373BD301}"
             },
             {
                 "Name": "Windows SDK Desktop Libs x86",
@@ -484,28 +336,12 @@
                 "IdentifyingNumber": "{15E06EC7-2755-BD07-45AD-98DF1679A6BE}"
             },
             {
-                "Name": "Microsoft System CLR Types para SQL Server 2019 CTP2.2",
-                "IdentifyingNumber": "{7FAD4DD7-7874-48A9-8E1C-1EAE6267A5A5}"
-            },
-            {
-                "Name": "Microsoft .NET Core Targeting Pack - 3.1.0 (x64)",
-                "IdentifyingNumber": "{31EDE1E7-C855-4633-9D73-56F566136567}"
-            },
-            {
                 "Name": "icecap_collectionresourcesx64",
                 "IdentifyingNumber": "{111063F7-6312-4817-B041-1257C882ECE7}"
             },
             {
                 "Name": "VS Script Debugging Common",
                 "IdentifyingNumber": "{A4272808-82F5-410F-A5F9-1BF6F63F6B9A}"
-            },
-            {
-                "Name": "Microsoft Command Line Utilities 15 for SQL Server",
-                "IdentifyingNumber": "{41C0DB18-1790-465E-B0DD-D9CAA35CACBE}"
-            },
-            {
-                "Name": "Microsoft Workflow Debugger v1.0 for amd64",
-                "IdentifyingNumber": "{6CCDB628-F4C8-3091-A76A-731A8A97868D}"
             },
             {
                 "Name": "vs_minshellmsires",
@@ -516,20 +352,8 @@
                 "IdentifyingNumber": "{26778A28-6410-4CCA-B7D4-63A23C58526F}"
             },
             {
-                "Name": "Microsoft Windows Communication Foundation Diagnostic Pack for x86",
-                "IdentifyingNumber": "{FE825C68-D0CC-3FC8-9C03-64DAC75D90A7}"
-            },
-            {
                 "Name": "icecap_collection_x64",
                 "IdentifyingNumber": "{7C914878-C64B-4CA6-8E41-91308877A586}"
-            },
-            {
-                "Name": "Microsoft Update Health Tools",
-                "IdentifyingNumber": "{AF47B488-9780-4AB5-A97E-762E28013CA6}"
-            },
-            {
-                "Name": "Microsoft .NET Framework 4 Multi-Targeting Pack",
-                "IdentifyingNumber": "{CFEF48A8-BFB8-3EAC-8BA5-DE4F8AA267CE}"
             },
             {
                 "Name": "windows_toolscorepkg",
@@ -542,26 +366,6 @@
             {
                 "Name": "Windows SDK for Windows Store Apps Libs",
                 "IdentifyingNumber": "{217E19C8-ACC0-C7ED-AB69-A30F3F96C625}"
-            },
-            {
-                "Name": "Microsoft Visual C++ 2019 X86 Additional Runtime - 14.28.29334",
-                "IdentifyingNumber": "{14C49FC8-3E9B-4F29-8526-26629B5CF30B}"
-            },
-            {
-                "Name": "Microsoft .NET Host FX Resolver - 5.0.0 (x86)",
-                "IdentifyingNumber": "{C1213BF8-6544-4AB7-A439-6ECAF59C64F2}"
-            },
-            {
-                "Name": "Microsoft Azure Authoring Tools - v2.9.6",
-                "IdentifyingNumber": "{EDADFA19-7F96-4075-A4AB-2209910626C5}"
-            },
-            {
-                "Name": "Microsoft .NET Core Runtime - 3.1.9 (x64)",
-                "IdentifyingNumber": "{251AE139-3E66-4E5B-972A-3529EE4FE65F}"
-            },
-            {
-                "Name": "Microsoft .NET Framework 4.5.2 Multi-Targeting Pack",
-                "IdentifyingNumber": "{19E8AE59-4D4A-3534-B567-6CC08FA4102E}"
             },
             {
                 "Name": "vs_clickoncesigntoolmsi",
@@ -580,14 +384,6 @@
                 "IdentifyingNumber": "{DAAB3C99-04E9-4A26-B528-8827D8F90730}"
             },
             {
-                "Name": null,
-                "IdentifyingNumber": "{9AC08E99-230B-47e8-9721-4577B7F124EA}"
-            },
-            {
-                "Name": "Microsoft Azure PowerShell - April 2018",
-                "IdentifyingNumber": "{3BA7CAA9-97BA-4528-B7E1-B640910BB149}"
-            },
-            {
                 "Name": "vs_minshellmsi",
                 "IdentifyingNumber": "{08AF5DA9-F3BD-4B59-8D99-C47CC4D53CAD}"
             },
@@ -596,28 +392,8 @@
                 "IdentifyingNumber": "{6E3528B9-92A6-A48A-AE84-890E0E5DE9BB}"
             },
             {
-                "Name": "Microsoft .NET Framework 4.6.1 Targeting Pack",
-                "IdentifyingNumber": "{8BC3EEC9-090F-4C53-A8DA-1BEC913040F9}"
-            },
-            {
-                "Name": "Microsoft Windows Desktop Runtime - 5.0.0 (x86)",
-                "IdentifyingNumber": "{445166D9-79B3-4768-B515-4B7FCD43DF8E}"
-            },
-            {
-                "Name": "Microsoft .NET AppHost Pack - 5.0.0 (x64_x86)",
-                "IdentifyingNumber": "{677B9EE9-CA22-48DB-9116-7CE36C0C1C7C}"
-            },
-            {
-                "Name": "Microsoft .NET Core AppHost Pack - 3.1.9 (x64)",
-                "IdentifyingNumber": "{090DCBF9-8353-4E9D-B155-337B2A324D1B}"
-            },
-            {
                 "Name": "Paquete de compatibilidad de Microsoft .NET Framework 4.7.2 (espa\u00a4ol)",
                 "IdentifyingNumber": "{DE9EAC0A-7859-4294-B05F-4A056D83024C}"
-            },
-            {
-                "Name": "Microsoft .NET Core Runtime - 2.1.23 (x64)",
-                "IdentifyingNumber": "{5567D21A-257D-4A49-988E-7A6C2F792912}"
             },
             {
                 "Name": "sptools_Microsoft.VisualStudio.Vsto.Msi.Resources",
@@ -632,10 +408,6 @@
                 "IdentifyingNumber": "{4F52224A-CAAE-4726-BD5F-1E7093556DFB}"
             },
             {
-                "Name": "Microsoft .NET Toolset 5.0.100 (x64)",
-                "IdentifyingNumber": "{E3A4706A-7073-43FA-A95C-005BEEC2A45A}"
-            },
-            {
                 "Name": "Visual C++ Library CRT Desktop Appx Package",
                 "IdentifyingNumber": "{1426EC6A-5A89-4E45-B8B2-69499D672764}"
             },
@@ -644,16 +416,8 @@
                 "IdentifyingNumber": "{13952D7A-B7B3-F4F8-5F29-5CD18E8168B7}"
             },
             {
-                "Name": "Microsoft .NET Core 3.1 Templates 5.0.100 (x64)",
-                "IdentifyingNumber": "{811B1F7A-8A18-44CF-B778-9B418F8E1E32}"
-            },
-            {
                 "Name": "Visual C++ Library CRT ARM64 Appx Package",
                 "IdentifyingNumber": "{79EBB18A-35C4-4486-ACD1-E3A94196ED06}"
-            },
-            {
-                "Name": "Microsoft Visual Studio 2010 Tools for Office Runtime (x64) Language Pack - ESN",
-                "IdentifyingNumber": "{B618B2AA-4B45-3B04-98CA-50466370B650}"
             },
             {
                 "Name": "Teams Machine-Wide Installer",
@@ -664,32 +428,12 @@
                 "IdentifyingNumber": "{E90279BA-36B4-4477-A1B7-C81B571172F2}"
             },
             {
-                "Name": "Microsoft .NET Core Runtime - 3.1.9 (x86)",
-                "IdentifyingNumber": "{88556BBA-AF55-44BB-AE9D-0E75FD7935C6}"
-            },
-            {
                 "Name": "Online Plug-in",
                 "IdentifyingNumber": "{51059DCA-191F-49CD-8A37-FE5516EA52C9}"
             },
             {
                 "Name": "WinRT Intellisense UAP - en-us",
                 "IdentifyingNumber": "{6B37CC5B-78DF-5050-2215-68479716A587}"
-            },
-            {
-                "Name": "Microsoft Visual C++ 2019 X64 Minimum Runtime - 14.28.29334",
-                "IdentifyingNumber": "{8A3F7D5B-422D-49D9-84F7-8DC1B7782967}"
-            },
-            {
-                "Name": "Microsoft ASP.NET Core 3.1.9 Shared Framework (x86)",
-                "IdentifyingNumber": "{6B3FD46B-7D69-3F95-BDD6-F3154C994ACC}"
-            },
-            {
-                "Name": "Microsoft .NET Core AppHost Pack - 3.1.9 (x64_x86)",
-                "IdentifyingNumber": "{DE29C57B-390E-47D8-8496-D04F0FC8504E}"
-            },
-            {
-                "Name": "Microsoft ASP.NET Core 2.1.23 Shared Framework (x64)",
-                "IdentifyingNumber": "{E5EE5C7B-B070-39DA-966B-C7BE812E7518}"
             },
             {
                 "Name": "Citrix Workspace(DV)",
@@ -704,20 +448,8 @@
                 "IdentifyingNumber": "{36AE12FB-4349-6EAA-B6E4-5F4E06FA8AE8}"
             },
             {
-                "Name": "Microsoft .NET Standard Targeting Pack - 2.1.0 (x64)",
-                "IdentifyingNumber": "{A7036CFB-B403-4598-85FF-D397ABB88173}"
-            },
-            {
-                "Name": "Microsoft .NET Host FX Resolver - 5.0.0 (x64)",
-                "IdentifyingNumber": "{0DA2670C-83CF-4F3A-929C-19FB3C26B094}"
-            },
-            {
                 "Name": "Update for Windows 10 for x64-based Systems (KB5001716)",
                 "IdentifyingNumber": "{82BD0A1C-815F-487F-9AE7-CE73DA413CFF}"
-            },
-            {
-                "Name": "Microsoft Windows Desktop Targeting Pack - 3.1.0 (x64)",
-                "IdentifyingNumber": "{7519423C-A977-4160-83A2-48633600A216}"
             },
             {
                 "Name": "Python 3.7.8 Standard Library (64-bit symbols)",
@@ -728,10 +460,6 @@
                 "IdentifyingNumber": "{3DC4086C-B365-3DE4-878B-659DEB72904E}"
             },
             {
-                "Name": "Microsoft .NET Core 5.0 Templates 5.0.100 (x64)",
-                "IdentifyingNumber": "{563A7A6C-7527-4184-915E-BA65DD4A13E0}"
-            },
-            {
                 "Name": "Python 3.7.8 Executables (64-bit)",
                 "IdentifyingNumber": "{0EEFE4AC-ED52-4F6F-A726-A9030991B75D}"
             },
@@ -740,16 +468,8 @@
                 "IdentifyingNumber": "{1F3C3AAC-9F7A-47DA-A082-0ACE770041BE}"
             },
             {
-                "Name": "Microsoft ODBC Driver 17 for SQL Server",
-                "IdentifyingNumber": "{2106BECC-3376-41AF-964F-C1A7E7BD2719}"
-            },
-            {
                 "Name": "Visual C++ Library CRT Desktop Appx Package",
                 "IdentifyingNumber": "{35FF23EC-FBBC-411B-8E7D-90D969D37574}"
-            },
-            {
-                "Name": "Microsoft ASP.NET Core 5.0.0 Targeting Pack (x64)",
-                "IdentifyingNumber": "{7E0C04EC-9D6F-36CD-A821-DC8493EE407F}"
             },
             {
                 "Name": "Citrix WorkSpace Browser",
@@ -758,22 +478,6 @@
             {
                 "Name": "Windows App Certification Kit SupportedApiList x86",
                 "IdentifyingNumber": "{5C3F08FC-E0D4-6C94-90EF-72DE63DDA885}"
-            },
-            {
-                "Name": "Microsoft Windows Desktop Runtime - 3.1.9 (x86)",
-                "IdentifyingNumber": "{C3E1EF0D-C94E-4F3D-A90A-E740F78269A5}"
-            },
-            {
-                "Name": "Microsoft .NET Native SDK",
-                "IdentifyingNumber": "{EF0C772D-F5E3-36D0-BDAB-FD378533CD40}"
-            },
-            {
-                "Name": "Microsoft .NET AppHost Pack - 5.0.0 (x64)",
-                "IdentifyingNumber": "{D00DFA2D-1F3F-46DC-86A1-1A85AC6EB013}"
-            },
-            {
-                "Name": "Microsoft Exchange Web Services Managed API 2.1",
-                "IdentifyingNumber": "{24CA683D-8174-4EBF-AD4D-3F2DD7814716}"
             },
             {
                 "Name": "Windows IoT Extension SDK",
@@ -808,28 +512,8 @@
                 "IdentifyingNumber": "{8F21D4CD-9CB4-2648-EECC-60147DE7B32D}"
             },
             {
-                "Name": "Microsoft .NET Framework 4.7.2 Targeting Pack",
-                "IdentifyingNumber": "{1784A8CD-F7FE-47E2-A87D-1F31E7242D0D}"
-            },
-            {
                 "Name": "Windows SDK Desktop Libs arm64",
                 "IdentifyingNumber": "{166BCCDD-48C1-8103-A7E7-0F3DE471223D}"
-            },
-            {
-                "Name": "Microsoft .NET Framework 4.8 SDK (espa\u00a4ol)",
-                "IdentifyingNumber": "{59F4AEDD-1897-4E4C-BB25-61DC440429B9}"
-            },
-            {
-                "Name": "Microsoft .NET AppHost Pack - 5.0.0 (x64_arm64)",
-                "IdentifyingNumber": "{A12FBFDD-DF5D-4E9D-A622-07C9D508721C}"
-            },
-            {
-                "Name": "Microsoft .NET Runtime - 5.0.0 (x64)",
-                "IdentifyingNumber": "{FE6FF6ED-93DE-42E3-991D-346F0C1FC187}"
-            },
-            {
-                "Name": "Microsoft .NET Runtime - 5.0.0 (x86)",
-                "IdentifyingNumber": "{364D5AED-307A-423D-AABC-E68FFDDAA513}"
             },
             {
                 "Name": "Windows SDK Desktop Headers x64",
@@ -840,16 +524,8 @@
                 "IdentifyingNumber": "{DDAF4CFD-D635-8305-5157-9ECEA9F89678}"
             },
             {
-                "Name": "Microsoft ASP.NET Web Tools Packages 16.0 - ENU",
-                "IdentifyingNumber": "{499DD72E-4176-377B-B358-28DCAB3832AE}"
-            },
-            {
                 "Name": "Windows App Certification Kit Native Components",
                 "IdentifyingNumber": "{21F4DE3E-CE64-584E-BD74-2D1765EB39DE}"
-            },
-            {
-                "Name": "Microsoft Visual C++ 2019 X64 Additional Runtime - 14.28.29334",
-                "IdentifyingNumber": "{2E11EF4E-901F-4B2D-B68E-3DB2A566C857}"
             },
             {
                 "Name": "Windows Simulator",
@@ -868,20 +544,12 @@
                 "IdentifyingNumber": "{86ADBBAE-77AE-FA26-7C17-802AE28AC316}"
             },
             {
-                "Name": "Microsoft .NET SDK 5.0.100 (x64) from Visual Studio",
-                "IdentifyingNumber": "{16D58CBE-8F79-46C3-821C-7534E7218D29}"
-            },
-            {
                 "Name": "vs_vswebprotocolselectormsires",
                 "IdentifyingNumber": "{E481F8CE-018C-4049-BDED-59D56BA0E2A2}"
             },
             {
                 "Name": "Workflow Manager Tools 1.0 for Visual Studio",
                 "IdentifyingNumber": "{B291D9DE-784D-43DD-8EBE-4D9E25F7090C}"
-            },
-            {
-                "Name": "Microsoft Azure Compute Emulator - v2.9.6",
-                "IdentifyingNumber": "{1657ABEE-7D56-416A-B7E0-A89CC5AAD0F7}"
             },
             {
                 "Name": "Python 3.7.8 Executables (64-bit symbols)",
@@ -904,14 +572,6 @@
                 "IdentifyingNumber": "{D629D35F-A26E-4CF7-A512-3C890257A790}"
             },
             {
-                "Name": "Microsoft UniversalWindowsPlatform SDK",
-                "IdentifyingNumber": "{61B7616F-3C59-41E2-8376-11440B06E7EA}"
-            },
-            {
-                "Name": "Microsoft SQL Server 2016 LocalDB",
-                "IdentifyingNumber": "{0CA7D28F-F81A-42A2-B14B-CABE07F04282}"
-            },
-            {
                 "Name": "WinRT Intellisense Mobile - en-us",
                 "IdentifyingNumber": "{918A448F-59E8-FBF5-B087-D3F07160C7E0}"
             },
@@ -920,12 +580,546 @@
                 "IdentifyingNumber": "{65E9398F-77A0-8681-026C-8CF092A71F11}"
             },
             {
-                "Name": "Microsoft Workflow Debugger v1.0 for x86",
-                "IdentifyingNumber": "{02805F9F-3A14-3EE7-B6A2-1F5D6E946572}"
+                "Name": "Visual C++ Library CRT Desktop Appx Package",
+                "IdentifyingNumber": "{57A733AF-F61B-4B3D-861E-C2C7E1295A09}"
             },
             {
-                "Name": "Microsoft System CLR Types para SQL Server 2019 CTP2.2",
-                "IdentifyingNumber": "{C42B6F9F-4C9E-45E0-BAD3-4C1F933410A3}"
+                "Name": "Universal CRT Redistributable",
+                "IdentifyingNumber": "{847D4DAF-0182-265B-324F-406462E8A90D}"
+            },
+            {
+                "Name": "Entity Framework 6.2.0 Tools  for Visual Studio 2019",
+                "IdentifyingNumber": "{7C2070BF-8E07-4B5F-A182-FADB0B95AB39}"
+            },
+            {
+                "Name": "WinAppDeploy",
+                "IdentifyingNumber": "{8E3AE0EF-D067-700C-BDB4-10D5552155DC}"
+            },
+            {
+                "Name": "Windows Team Extension SDK Contracts",
+                "IdentifyingNumber": "{5D60A4EF-6EDF-AAF4-F0F0-49FDD40176B8}"
+            },
+            {
+                "Name": "WinRT Intellisense Desktop - Other Languages",
+                "IdentifyingNumber": "{7EF010FF-7800-28BA-FF49-2D219EC7BA82}"
+            },
+            {
+                "Name": "vs_communitymsires",
+                "IdentifyingNumber": "{79DDA8FF-26D4-498A-B8D7-5DFA86EAD686}"
+            }
+        ]
+    },
+    {
+        "ip": "192.168.20.8",
+        "host_name": "DESKTOP-MTICFBL",
+        "apps": [
+            {
+                "Name": "Office 16 Click-to-Run Extensibility Component",
+                "IdentifyingNumber": "{90160000-008C-0000-1000-0000000FF1CE}"
+            },
+            {
+                "Name": "Office 16 Click-to-Run Localization Component",
+                "IdentifyingNumber": "{90160000-008C-0C0A-1000-0000000FF1CE}"
+            },
+            {
+                "Name": "Office 16 Click-to-Run Licensing Component",
+                "IdentifyingNumber": "{90160000-007E-0000-1000-0000000FF1CE}"
+            },
+            {
+                "Name": "Universal CRT Headers Libraries and Sources",
+                "IdentifyingNumber": "{74CBC330-ED16-31B9-E8BE-0C6A8E67DE32}"
+            },
+            {
+                "Name": "Paquete acumulativo de Intellisense de Microsoft .NET Framework para Visual Studio (espa\u00a4ol)",
+                "IdentifyingNumber": "{F1648370-5D04-42C6-9DBA-98F0408FC7EB}"
+            },
+            {
+                "Name": "Windows SDK Redistributables",
+                "IdentifyingNumber": "{34B51780-922E-5CBF-C16F-13F0A9502267}"
+            },
+            {
+                "Name": "MSI Development Tools",
+                "IdentifyingNumber": "{DB4DB790-64DD-1902-4BF2-833B3B6DBCA1}"
+            },
+            {
+                "Name": "Windows SDK Desktop Tools x86",
+                "IdentifyingNumber": "{540ADDB0-7A37-9B99-3568-FD1EA33D3B38}"
+            },
+            {
+                "Name": "LogMeIn Client",
+                "IdentifyingNumber": "{56D1BEB0-0F92-400B-9D04-54C0BD5F776C}"
+            },
+            {
+                "Name": "Visual C++ Library CRT Appx Resource Package",
+                "IdentifyingNumber": "{CFB1DBC0-D653-4B4D-8CB6-935645BBA6A2}"
+            },
+            {
+                "Name": "Windows SDK Desktop Tools x64",
+                "IdentifyingNumber": "{795E8F11-37DE-611E-921E-7D70BE09BF7B}"
+            },
+            {
+                "Name": "WinRT Intellisense PPI - en-us",
+                "IdentifyingNumber": "{66483041-F590-EC46-4AF0-EE39C62FB680}"
+            },
+            {
+                "Name": "WinRT Intellisense UAP - Other Languages",
+                "IdentifyingNumber": "{250D5341-0879-4016-399C-BBCD87B80E95}"
+            },
+            {
+                "Name": "GitHub CLI",
+                "IdentifyingNumber": "{2BA87281-0973-42C6-8214-B2D516CCF05B}"
+            },
+            {
+                "Name": "Windows SDK AddOn",
+                "IdentifyingNumber": "{E6F877A1-2F65-4BF0-87B6-A4071B7663D3}"
+            },
+            {
+                "Name": "Update for Windows 10 for x64-based Systems (KB5001716)",
+                "IdentifyingNumber": "{C22F49B1-0F67-47DC-A490-E8B4B6558EA9}"
+            },
+            {
+                "Name": "Windows SDK",
+                "IdentifyingNumber": "{3A98BFB1-16A6-576B-FFC8-7FEF26B40DBA}"
+            },
+            {
+                "Name": "vs_BlendMsi",
+                "IdentifyingNumber": "{B5E3A3E1-1529-4D5A-9E95-34971FA07825}"
+            },
+            {
+                "Name": "Windows SDK for Windows Store Apps Contracts",
+                "IdentifyingNumber": "{C13D21F1-E9A3-FB93-18C4-B905FB47F122}"
+            },
+            {
+                "Name": "Windows SDK Signing Tools",
+                "IdentifyingNumber": "{4CA7ABF1-DB68-0F9E-5AD9-58550198D0AC}"
+            },
+            {
+                "Name": "Windows SDK EULA",
+                "IdentifyingNumber": "{5F56BF12-0818-B58A-5862-939784E12F8B}"
+            },
+            {
+                "Name": "IntelliTraceProfilerProxy",
+                "IdentifyingNumber": "{1C92D642-AD8C-4319-8E7B-5D6AA55F430B}"
+            },
+            {
+                "Name": "vs_clickoncebootstrappermsires",
+                "IdentifyingNumber": "{271F1F42-B547-4498-825F-590DBB1774F7}"
+            },
+            {
+                "Name": "TextPad 8.8",
+                "IdentifyingNumber": "{2997FB52-F493-4644-BCD6-F00816479D3A}"
+            },
+            {
+                "Name": "Python Launcher",
+                "IdentifyingNumber": "{99719382-D7A9-4DC2-BF0C-C23B730A313D}"
+            },
+            {
+                "Name": "Windows SDK ARM Desktop Tools",
+                "IdentifyingNumber": "{20C00582-BD18-B599-CF98-61011567D747}"
+            },
+            {
+                "Name": "vs_tipsmsi",
+                "IdentifyingNumber": "{E208E682-50EE-4F2F-9860-C91B906B8A03}"
+            },
+            {
+                "Name": "Comprobaci\u00a2n de estado de PC Windows",
+                "IdentifyingNumber": "{8B474A92-CE3A-4F46-B6F1-6DFA1390F826}"
+            },
+            {
+                "Name": "Windows Mobile Extension SDK Contracts",
+                "IdentifyingNumber": "{154EEEB2-18D9-4FD5-EDE1-6D0B318FAC53}"
+            },
+            {
+                "Name": "WinRT Intellisense PPI - Other Languages",
+                "IdentifyingNumber": "{9C61E6D2-C43E-6746-B519-6185558C4A24}"
+            },
+            {
+                "Name": "Windows SDK for Windows Store Apps Metadata",
+                "IdentifyingNumber": "{5FAF2ED2-CA24-0313-8CAF-C28DEE421200}"
+            },
+            {
+                "Name": "VS JIT Debugger",
+                "IdentifyingNumber": "{C7E8A4F2-EF09-42A8-B892-69D5ED99D965}"
+            },
+            {
+                "Name": "WinRT Intellisense Desktop - en-us",
+                "IdentifyingNumber": "{E67F1F03-FB4A-3D61-8999-E6A4C4B26F34}"
+            },
+            {
+                "Name": "Universal CRT Tools x64",
+                "IdentifyingNumber": "{54FE4D23-11A2-F1C4-76E9-79C8FB40A4A1}"
+            },
+            {
+                "Name": "Windows SDK DirectX x86 Remote",
+                "IdentifyingNumber": "{52CE7A43-B499-5F4B-A525-AA8794D3580F}"
+            },
+            {
+                "Name": "AMD SFH I2C Controller Driver",
+                "IdentifyingNumber": "{F1FAE283-3677-4C8B-A984-FFC8A3F3A2F4}"
+            },
+            {
+                "Name": "vs_FileTracker_Singleton",
+                "IdentifyingNumber": "{3C4B2ED3-2296-4203-A420-AC042BE8484D}"
+            },
+            {
+                "Name": "SDK ARM Redistributables",
+                "IdentifyingNumber": "{67EE3804-9642-62BA-EBF1-B1561FB4ECBE}"
+            },
+            {
+                "Name": "vs_minshellinteropmsi",
+                "IdentifyingNumber": "{27B16914-BC5D-4018-8074-071262A27F6D}"
+            },
+            {
+                "Name": "FortiClient VPN",
+                "IdentifyingNumber": "{AFE93A24-F5E9-4E53-BBFE-AF54AA25FBFF}"
+            },
+            {
+                "Name": "Active Directory Authentication Library for SQL Server",
+                "IdentifyingNumber": "{31D1C054-08DC-4509-B621-2024938AABB1}"
+            },
+            {
+                "Name": "Windows Mobile Extension SDK",
+                "IdentifyingNumber": "{30AD20A4-1FFF-2632-4555-EFAF9D8A32CD}"
+            },
+            {
+                "Name": "vs_devenvmsi",
+                "IdentifyingNumber": "{AD0C92A4-1514-4BC1-A723-A272A8343924}"
+            },
+            {
+                "Name": "WinRT Intellisense IoT - Other Languages",
+                "IdentifyingNumber": "{6B03A6A4-643C-57CE-CA6F-4E19BF47497A}"
+            },
+            {
+                "Name": "Java 8 Update 361",
+                "IdentifyingNumber": "{26A24AE4-039D-4CA4-87B4-2F32180361F0}"
+            },
+            {
+                "Name": "Cisco AnyConnect Secure Mobility Client",
+                "IdentifyingNumber": "{80416A15-214B-4F25-A025-ED6E875631F2}"
+            },
+            {
+                "Name": "icecap_collection_neutral",
+                "IdentifyingNumber": "{7C703135-98AC-4EB9-86C0-0C3169C99649}"
+            },
+            {
+                "Name": "ClickOnce Bootstrapper Package for Microsoft .NET Framework",
+                "IdentifyingNumber": "{0243F145-076D-423A-8F77-218DC8840261}"
+            },
+            {
+                "Name": "VS Immersive Activate Helper",
+                "IdentifyingNumber": "{A71406B5-E487-4B01-8E59-D466841350F5}"
+            },
+            {
+                "Name": "Windows SDK Facade Windows WinMD Versioned",
+                "IdentifyingNumber": "{A5EF45C5-FA27-7E8F-1AE8-E3D39BAC779E}"
+            },
+            {
+                "Name": "USBCOMInstaller",
+                "IdentifyingNumber": "{E9AAAF26-52A4-4A44-AA14-708EB7A9BC58}"
+            },
+            {
+                "Name": "vs_vswebprotocolselectormsi",
+                "IdentifyingNumber": "{BEEB2E56-91DB-4AFB-AC88-8E98B18DD889}"
+            },
+            {
+                "Name": "vs_clickoncebootstrappermsi",
+                "IdentifyingNumber": "{78696386-A4B6-4F69-B558-2667CD3A579D}"
+            },
+            {
+                "Name": "SDK ARM Additions",
+                "IdentifyingNumber": "{73681F86-CD86-4208-572F-959B45430B04}"
+            },
+            {
+                "Name": "Universal CRT Tools x86",
+                "IdentifyingNumber": "{9F7B0D96-881D-8850-C303-43F3A08E6902}"
+            },
+            {
+                "Name": "vs_filehandler_x86",
+                "IdentifyingNumber": "{8990F1B6-F880-4E73-A2D9-7A611F4C38A1}"
+            },
+            {
+                "Name": "Windows IoT Extension SDK Contracts",
+                "IdentifyingNumber": "{3CEE8EB6-538E-DDA2-51A5-842ECE6CE1E8}"
+            },
+            {
+                "Name": "Windows SDK for Windows Store Apps Tools",
+                "IdentifyingNumber": "{A5174AE6-3704-EE0A-BEFF-21BC5275BA02}"
+            },
+            {
+                "Name": "Windows SDK for Windows Store Managed Apps Libs",
+                "IdentifyingNumber": "{CEDD7BE6-97B5-9AE8-57C0-B390E0C4328F}"
+            },
+            {
+                "Name": "vcpp_crt.redist.clickonce",
+                "IdentifyingNumber": "{D74BF717-7C6E-43E8-8D01-60B41059B3A6}"
+            },
+            {
+                "Name": "TypeScript SDK",
+                "IdentifyingNumber": "{873B2737-D587-4FC9-993D-086DBF507461}"
+            },
+            {
+                "Name": "Node.js",
+                "IdentifyingNumber": "{2DFAC857-A66A-4D1A-900C-B36DC56C2E76}"
+            },
+            {
+                "Name": "Windows SDK for Windows Store Apps",
+                "IdentifyingNumber": "{39692B57-0BA8-2197-8BC5-4108DFB8475A}"
+            },
+            {
+                "Name": "IntelliTraceProfilerProxy",
+                "IdentifyingNumber": "{7D94CF67-6666-4111-B027-D7AB7F189F70}"
+            },
+            {
+                "Name": "Application Verifier x64 External Package",
+                "IdentifyingNumber": "{10CA1677-8F02-3131-F25C-780BAB52E468}"
+            },
+            {
+                "Name": "Kits Configuration Installer",
+                "IdentifyingNumber": "{63AAA877-5536-9481-2385-28A082100D78}"
+            },
+            {
+                "Name": "Sophos Home",
+                "IdentifyingNumber": "{25810587-8966-4834-BBE3-C8141247A1FC}"
+            },
+            {
+                "Name": "Universal General MIDI DLS Extension SDK",
+                "IdentifyingNumber": "{6F54BF87-2EE6-FA6D-431D-33A665992D49}"
+            },
+            {
+                "Name": "Windows SDK Desktop Libs x86",
+                "IdentifyingNumber": "{238F56B7-7D14-F8EB-3F4D-8CFF18C19E2B}"
+            },
+            {
+                "Name": "vs_filehandler_amd64",
+                "IdentifyingNumber": "{E9439DB7-BF01-4820-8CB1-80957150AB86}"
+            },
+            {
+                "Name": "vs_communitymsi",
+                "IdentifyingNumber": "{DEB11EB7-B61A-4883-8CB0-99013A4873AB}"
+            },
+            {
+                "Name": "Windows App Certification Kit x64",
+                "IdentifyingNumber": "{15E06EC7-2755-BD07-45AD-98DF1679A6BE}"
+            },
+            {
+                "Name": "icecap_collectionresourcesx64",
+                "IdentifyingNumber": "{111063F7-6312-4817-B041-1257C882ECE7}"
+            },
+            {
+                "Name": "VS Script Debugging Common",
+                "IdentifyingNumber": "{A4272808-82F5-410F-A5F9-1BF6F63F6B9A}"
+            },
+            {
+                "Name": "vs_minshellmsires",
+                "IdentifyingNumber": "{1012C628-3F55-457B-9E6B-624A0D6E69F0}"
+            },
+            {
+                "Name": "icecap_collection_x64",
+                "IdentifyingNumber": "{7C914878-C64B-4CA6-8E41-91308877A586}"
+            },
+            {
+                "Name": "windows_toolscorepkg",
+                "IdentifyingNumber": "{4CA52EB8-6AD8-49D8-983B-4EBC9DCABC66}"
+            },
+            {
+                "Name": "Windows Simulator - ENU",
+                "IdentifyingNumber": "{0D5009C8-F5AF-4A81-B4F8-F334A6358CCA}"
+            },
+            {
+                "Name": "Windows SDK for Windows Store Apps Libs",
+                "IdentifyingNumber": "{217E19C8-ACC0-C7ED-AB69-A30F3F96C625}"
+            },
+            {
+                "Name": "vs_clickoncesigntoolmsi",
+                "IdentifyingNumber": "{30D97A69-3C0F-4552-9A72-60E591B210C7}"
+            },
+            {
+                "Name": "Windows SDK Desktop Libs x64",
+                "IdentifyingNumber": "{54140689-B7DB-B9CF-537D-8FEB279410F9}"
+            },
+            {
+                "Name": "Windows SDK Desktop Tools arm64",
+                "IdentifyingNumber": "{2E6C6299-BF5F-379D-55F2-8FD3367F5918}"
+            },
+            {
+                "Name": "Windows Subsystem for Linux Update",
+                "IdentifyingNumber": "{8D646799-DB00-4000-AE7A-756A05A4F1D8}"
+            },
+            {
+                "Name": "Visual C++ Library CRT Appx Package",
+                "IdentifyingNumber": "{DAAB3C99-04E9-4A26-B528-8827D8F90730}"
+            },
+            {
+                "Name": "vs_minshellmsi",
+                "IdentifyingNumber": "{08AF5DA9-F3BD-4B59-8D99-C47CC4D53CAD}"
+            },
+            {
+                "Name": "Windows SDK DirectX x64 Remote",
+                "IdentifyingNumber": "{6E3528B9-92A6-A48A-AE84-890E0E5DE9BB}"
+            },
+            {
+                "Name": "Paquete de compatibilidad de Microsoft .NET Framework 4.7.2 (espa\u00a4ol)",
+                "IdentifyingNumber": "{DE9EAC0A-7859-4294-B05F-4A056D83024C}"
+            },
+            {
+                "Name": "Visual C++ Library CRT Desktop Appx Package",
+                "IdentifyingNumber": "{1426EC6A-5A89-4E45-B8B2-69499D672764}"
+            },
+            {
+                "Name": "Universal CRT Extension SDK",
+                "IdentifyingNumber": "{13952D7A-B7B3-F4F8-5F29-5CD18E8168B7}"
+            },
+            {
+                "Name": "Visual C++ Library CRT ARM64 Appx Package",
+                "IdentifyingNumber": "{79EBB18A-35C4-4486-ACD1-E3A94196ED06}"
+            },
+            {
+                "Name": "Teams Machine-Wide Installer",
+                "IdentifyingNumber": "{731F6BAA-A986-45A4-8936-7C3AAAAA760B}"
+            },
+            {
+                "Name": "calibre 64bit",
+                "IdentifyingNumber": "{920E3ABA-79B1-4194-A409-2B51E2DC61E9}"
+            },
+            {
+                "Name": "WinRT Intellisense UAP - en-us",
+                "IdentifyingNumber": "{6B37CC5B-78DF-5050-2215-68479716A587}"
+            },
+            {
+                "Name": "Windows Phone SDK 8.0 Assemblies for Visual Studio 2019",
+                "IdentifyingNumber": "{BA8395AB-52FC-365A-9543-1183C7FDF781}"
+            },
+            {
+                "Name": "WinRT Intellisense IoT - en-us",
+                "IdentifyingNumber": "{36AE12FB-4349-6EAA-B6E4-5F4E06FA8AE8}"
+            },
+            {
+                "Name": "MobaXterm",
+                "IdentifyingNumber": "{AE9308FB-0A16-4496-89F7-07CB198572F4}"
+            },
+            {
+                "Name": "Windows SDK Desktop Headers arm",
+                "IdentifyingNumber": "{3DC4086C-B365-3DE4-878B-659DEB72904E}"
+            },
+            {
+                "Name": "DiagnosticsHub_CollectionService",
+                "IdentifyingNumber": "{1F3C3AAC-9F7A-47DA-A082-0ACE770041BE}"
+            },
+            {
+                "Name": "Visual C++ Library CRT Desktop Appx Package",
+                "IdentifyingNumber": "{35FF23EC-FBBC-411B-8E7D-90D969D37574}"
+            },
+            {
+                "Name": "Windows App Certification Kit SupportedApiList x86",
+                "IdentifyingNumber": "{5C3F08FC-E0D4-6C94-90EF-72DE63DDA885}"
+            },
+            {
+                "Name": "Windows IoT Extension SDK",
+                "IdentifyingNumber": "{9DA29C3D-9E36-AC22-59C8-FFCF413DC068}"
+            },
+            {
+                "Name": "Windows Desktop Extension SDK",
+                "IdentifyingNumber": "{B4A7994D-DBA1-8B4D-621A-03EE52CF838A}"
+            },
+            {
+                "Name": "MySQL Workbench 8.0 CE",
+                "IdentifyingNumber": "{917D455D-1D79-4D9E-AF98-8D9B3D593522}"
+            },
+            {
+                "Name": "Windows Desktop Extension SDK Contracts",
+                "IdentifyingNumber": "{39EDCC7D-7B63-5D99-C053-C8CDF02DC5ED}"
+            },
+            {
+                "Name": "Windows SDK Modern Versioned Developer Tools",
+                "IdentifyingNumber": "{21514D7D-4124-E52E-8483-727380B855D7}"
+            },
+            {
+                "Name": "vs_SQLClickOnceBootstrappermsi",
+                "IdentifyingNumber": "{E1FD1D9D-0611-4DE5-826F-37FAC17706AC}"
+            },
+            {
+                "Name": "Windows Team Extension SDK",
+                "IdentifyingNumber": "{6EEDDD9D-BF7B-8229-92B4-89DFCF7481ED}"
+            },
+            {
+                "Name": "icecap_collectionresources",
+                "IdentifyingNumber": "{DAC472CD-E1BB-4DC5-BA42-9C184BB838AE}"
+            },
+            {
+                "Name": "Windows SDK for Windows Store Apps DirectX x86 Remote",
+                "IdentifyingNumber": "{8F21D4CD-9CB4-2648-EECC-60147DE7B32D}"
+            },
+            {
+                "Name": "Oracle VM VirtualBox 7.0.8",
+                "IdentifyingNumber": "{2D9D28CD-84DE-4DC7-BAD2-CA5505324049}"
+            },
+            {
+                "Name": "Java(TM) SE Development Kit 11.0.18 (64-bit)",
+                "IdentifyingNumber": "{B72FF2DD-4635-5AE6-A898-CF05AAC475B3}"
+            },
+            {
+                "Name": "Windows SDK Desktop Libs arm64",
+                "IdentifyingNumber": "{166BCCDD-48C1-8103-A7E7-0F3DE471223D}"
+            },
+            {
+                "Name": "Windows SDK Desktop Headers x64",
+                "IdentifyingNumber": "{6A96DEED-D0D8-6DD0-21BD-7D8F60714854}"
+            },
+            {
+                "Name": "Windows SDK Modern Non-Versioned Developer Tools",
+                "IdentifyingNumber": "{DDAF4CFD-D635-8305-5157-9ECEA9F89678}"
+            },
+            {
+                "Name": "Windows App Certification Kit Native Components",
+                "IdentifyingNumber": "{21F4DE3E-CE64-584E-BD74-2D1765EB39DE}"
+            },
+            {
+                "Name": "Windows Simulator",
+                "IdentifyingNumber": "{E957D37E-05B8-4A46-965E-A27D1F666554}"
+            },
+            {
+                "Name": "IIS 10.0 Express",
+                "IdentifyingNumber": "{0307C98E-AE82-4A4F-A950-A72FBD805338}"
+            },
+            {
+                "Name": "Windows SDK Desktop Headers arm64",
+                "IdentifyingNumber": "{452ABC9E-731E-71B2-8824-C5B2595370AF}"
+            },
+            {
+                "Name": "Windows SDK Desktop Headers x86",
+                "IdentifyingNumber": "{86ADBBAE-77AE-FA26-7C17-802AE28AC316}"
+            },
+            {
+                "Name": "vs_vswebprotocolselectormsires",
+                "IdentifyingNumber": "{E481F8CE-018C-4049-BDED-59D56BA0E2A2}"
+            },
+            {
+                "Name": "Visual C++ Library CRT Appx Package",
+                "IdentifyingNumber": "{1435262F-4DB6-473B-80AF-577F7071EF6E}"
+            },
+            {
+                "Name": "Java(TM) SE Development Kit 19.0.2 (64-bit)",
+                "IdentifyingNumber": "{5E32314F-F4C9-59D1-A229-BC58CEA0D74A}"
+            },
+            {
+                "Name": "ZebraDesigner 3",
+                "IdentifyingNumber": "{B5E9064F-6922-46E5-9EAC-F167340308A6}"
+            },
+            {
+                "Name": "Windows SDK Desktop Libs arm",
+                "IdentifyingNumber": "{995DDD4F-928C-4EBA-9702-E7CD3F6A7A9D}"
+            },
+            {
+                "Name": "Java Auto Updater",
+                "IdentifyingNumber": "{4A03706F-666A-4037-7777-5F2748764D10}"
+            },
+            {
+                "Name": "WinRT Intellisense Mobile - en-us",
+                "IdentifyingNumber": "{918A448F-59E8-FBF5-B087-D3F07160C7E0}"
+            },
+            {
+                "Name": "Windows SDK for Windows Store Apps Headers",
+                "IdentifyingNumber": "{65E9398F-77A0-8681-026C-8CF092A71F11}"
             },
             {
                 "Name": "Visual C++ Library CRT Desktop Appx Package",
