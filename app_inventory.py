@@ -21,7 +21,6 @@ def query_apps(host):
                             }
                         } | ConvertTo-Json
                         '''
-
     result = session.run_ps(powershell_script)
     if result.status_code == 0:
         decoded_output = result.std_out.decode('latin-1').strip('\x00\r\n').replace('\r\n','')
@@ -54,5 +53,3 @@ def index():
 
 if __name__=='__main__':
     get_app_list()
-
-

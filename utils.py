@@ -22,7 +22,6 @@ def get_network():
 
 def get_host_name(ip_address):
     try:
-    
         hostname, _, _ = socket.gethostbyaddr(ip_address)
         return hostname
     except Exception as e:

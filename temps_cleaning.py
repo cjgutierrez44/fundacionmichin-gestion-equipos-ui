@@ -35,6 +35,10 @@ def clean(host):
                         Clear-DnsClientCache
                      '''
     result = session.run_ps(powershell_script) 
+    powershell_script = '''
+                        Start-Process "Reg.exe" -ArgumentList "defrag" -Wait
+                     '''
+    result = session.run_ps(powershell_script) 
                      
     if result.status_code == 0:
         decoded_output = result.std_out.decode('latin-1').strip('\x00\r\n').replace('\r\n','')
