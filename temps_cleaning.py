@@ -52,6 +52,10 @@ def clean_temp_files():
 
 @temps_cleaning_bp.route('/')
 def index():
-    clean_temp_files()
-    return render_template('script_pages/temps_cleaning.html')
+    try:
+        clean_temp_files()
+    except Exception as e:
+        return 'Ha ocurrido un error durante el proceso, intentelo mas tarde', 500
+
+    return 'Tabajo terminado (pensar algo mejor)', 200
 
