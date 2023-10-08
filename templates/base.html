@@ -1,73 +1,55 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Fundación Michín -  {% block title %}{% endblock %}</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+   <!-- Option 1: Include in HTML -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+   <style>
+      .max-height{
+         height: 300px;
+      }
+      .min-width-column {
+         width: 1%; /* Ancho mínimo posible */
+         white-space: nowrap; /* Evitar que el contenido se envuelva */
+      }
+      .height-100{
+         height: 100%;
+      }
+      .toast-alert {
+            position: fixed;
+            top: 15%;
+            left: 50%;
+            width: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1050;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+      }
+         .toast-alert.show {
+            opacity: 1;
+        }
+
+   </style>
 </head>
-<body class="bg-light">
-   <div class="vh-100">
-    <div class="container-fluid h-100">
-      <div class="row"> 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom px-lg-5">
-         <div class="container-fluid">
-            <a class="navbar-brand" href="/shop">Fundación Michín: Gestion y mentenimiento de equipos</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-         </div>
-      </nav>
+<body>
+   <nav class="navbar py-0 navbar-light bg-light justify-content-beetwen">
+      <a href="/" class="btn fs-2"><i class="bi bi-house"></i></a>
+      <a href="/"><img src="{{ url_for('static', filename='img/fundacion-michin-logo-header2.png') }}"></a>
+      <a href="#" class="btn fs-2"><i class="bi bi-box-arrow-in-left"></i></a>
+   </nav>
+   <div class="alert toast-alert" id="miToast">
+      Alerta
    </div>
-   <div class="row">
-      <div class="col-md-2 border-end ">
-         <div class="navbar-collapse collapse d-lg-flex justify-content-between" id="navbarColor01" style="">
-            <div class="sidebar-sticky">
-               <h1 class="text-center mt-3 fs-5">Menú</h1>
-               <ul class="nav flex-column">
-                 <li class="nav-item">
-                  <a class="nav-link text-dark" href="{{url_for('index')}}">Inicio</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link text-dark" href="{{url_for('host_inventory.index')}}">Inventario de Equipos</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link text-dark" href="{{url_for('app_inventory.index')}}">Inventario de aplicaciones</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link text-dark" href="{{url_for('temps_cleaning.index')}}">Limpieza de temporales</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link text-dark" href="{{url_for('reg_cleaning.index')}}">Limpieza de registro</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link text-dark" href="{{url_for('updates_inventory.index')}}">Inventario de actualizaciones</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link text-dark" href="{{url_for('app_uninstaller.index')}}">Desinstalador de aplicaciones</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link text-dark" href="{{url_for('updates_installer.index')}}">Instalador de actualizaciones</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link text-dark" href="{{url_for('site_blocker.index')}}">Bloqueador de acceso a sitios prohibidos</a>
-               </li>                                                                                                                        
-            </ul>
-         </div>
-      </div>
+   <div class="container-fluid px-md-4 py-md-3 border rounded">
+      {% block content %}{% endblock %}
    </div>
-   <div class="col-md-10 mt-5 px-lg-5">
-      <div class="container border px-lg-5 py-lg-4 my-3">
-         {% block content %}{% endblock %}
-      </div>
-   </div>
-
-</div>
-
-</div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="{{ url_for('static', filename='js/functions-controller.js') }}"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+

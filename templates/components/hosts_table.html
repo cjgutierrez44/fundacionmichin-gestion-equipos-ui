@@ -1,0 +1,18 @@
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">Nombre</th>
+			<th scope="col">Dirección IP</th>
+			<th scope="col"></th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for host in list_pcs %}
+		<tr>
+			<td>PC - {{host.name}}</td>
+			<td>{{host.ip}}</td>
+			<td class="min-width-column"><a class="btn rounded fs-3 text-info" href="{{url_for('app_inventory.index', ip=host.ip)}}"><i class="bi bi-caret-right"></i></a></td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>

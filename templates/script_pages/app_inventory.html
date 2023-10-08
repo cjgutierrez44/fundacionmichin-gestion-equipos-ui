@@ -1,35 +1,33 @@
 {% extends 'base.html' %}
-{% block title %}Inventario de aplicaciones{% endblock %}
+{% block title %}Inventario de equipos en esta red{% endblock %}
 {% block content %}
-<div class="row">
-	<h2 class="text-center mb-3">Inventario de aplicaciones</h2>
-</div>
-<div class="card">
-	<div class="card-header">
-		<h5 class="card-title">PC - Nombre</h5>
-		<p>192.168.1.1</p>
-	</div>
-	<div class="card-body ">
-		<div class="accordion" id="accordionExample1">
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="headingOne">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-						Aplicaciones
-					</button>
-				</h2>
-				<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
-					<div class="accordion-body">
-						<ul class="list-group">
-							<li class="list-group-item">Aplicación # 1</li>
-							<li class="list-group-item">Aplicación # 2</li>
-							<li class="list-group-item">Aplicación # 3</li>
-							<li class="list-group-item">Aplicación # 4</li>
-							<li class="list-group-item">Aplicación # 5</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+<div class="row p-md-4 rounded  ">
+	<h2 class="">Inventario de aplicaciones</h2>
+		<div class="col-md-3 p-md-4 my-2 border rounded border-info">
+			<p><span class="fw-bold">IP:</span> {{pc_apps.ip}}</p>
+			<p><span class="fw-bold">Nombre:</span> {{pc_apps.host_name}}</p>
+			<p><span class="fw-bold">Cantidad de aplicaciones:</span> {{pc_apps.apps|length}}</p>
 		</div>
-	</div>
+
+</div>
+<div class="row p-md-4 my-2" >
+	<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">ID</th>
+			<th scope="col">Aplicación</th>
+			<th scope="col"></th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for app in pc_apps.apps %}
+		<tr>
+			<td>{{app.IdentifyingNumber}}</td>
+			<td>{{app.Name}}</td>
+			<td class="min-width-column"><button class="btn rounded fs-3 text-danger"><i class="bi bi-trash"></i></button></td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
 </div>
 {% endblock %}
