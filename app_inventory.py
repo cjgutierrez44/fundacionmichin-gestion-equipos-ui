@@ -1,7 +1,7 @@
 import json
 import os
 from flask import Blueprint, render_template
-from utils import get_network,get_local_path,get_pc_ip
+from utils import get_network,get_local_path,get_pc_ip, json_str_to_json_list
 import winrm
 import codecs
 
@@ -35,6 +35,7 @@ def get_app_list():
     if os.path.isfile(path_file + '_apps.json'):
         with open(path_file + '_apps.json', "r") as file:
             apps_x_host = json.load(file)
+
     elif os.path.isfile(path_file + '.json'):
         with open(path_file + '.json', "r") as file:
             list_hosts = json.load(file)
@@ -47,10 +48,14 @@ def get_app_list():
             file.write(json.dumps(apps_x_host))        
     return apps_x_host
     
-@app_inventory_bp.route('/')
-def index():
+@app_inventory_bp.route('/pc/<ip>')
+def index(ip):
     list_apps=get_app_list()
-    return render_template('script_pages/app_inventory.html')
+    pc_apps = None
+    for pc in list_apps:
+        if pc["ip"] == ip:
+            pc_apps = pc
+    return render_template('script_pages/app_inventory.html', pc_apps = pc_apps)
 
 if __name__=='__main__':
     get_app_list()

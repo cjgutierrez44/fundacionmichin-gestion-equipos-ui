@@ -51,7 +51,6 @@ def index():
 
 @host_inventory_bp.route('/re_scan/<page_from>?')
 def re_scan(page_from = 'index'):
-    print(page_from)
     path_file=get_local_path() + '/database/'+ get_network().replace('.','_') + '.json'
     if os.path.isfile(path_file):
         os.remove(path_file)

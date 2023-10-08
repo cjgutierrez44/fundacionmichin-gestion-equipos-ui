@@ -11,7 +11,7 @@
 		<tr>
 			<td>PC - {{host.name}}</td>
 			<td>{{host.ip}}</td>
-			<td class="min-width-column"><button class="btn rounded fs-3 text-info"><i class="bi bi-caret-right"></i></button></td>
+			<td class="min-width-column"><a class="btn rounded fs-3 text-info" href="{{url_for('app_inventory.index', ip=host.ip)}}"><i class="bi bi-caret-right"></i></a></td>
 		</tr>
 		{% endfor %}
 	</tbody>
