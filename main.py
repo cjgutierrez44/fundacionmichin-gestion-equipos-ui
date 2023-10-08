@@ -8,8 +8,9 @@ from reg_cleaning import reg_cleaning_bp
 from updates_inventory import updates_inventory_bp
 from updates_installer import updates_installer_bp
 from app_uninstaller import app_uninstaller_bp
-from host_inventory import host_inventory_bp
+from host_inventory import host_inventory_bp, list_host
 from site_blocker import site_blocker_bp
+
 
 app = Flask(__name__)
 
@@ -24,7 +25,7 @@ app.register_blueprint(site_blocker_bp, url_prefix='/site_blocker')
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', list_pcs = list_host())
 
 @app.errorhandler(404)
 def not_found_error(error):

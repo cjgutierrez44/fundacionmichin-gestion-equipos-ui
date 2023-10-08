@@ -1,5 +1,6 @@
 import os
 import socket
+import json
 
 def get_local_path():
     actual_path = os.getcwd()
@@ -27,4 +28,12 @@ def get_host_name(ip_address):
         return hostname
     except Exception as e:
         return ''
-    
+
+def json_str_to_json_list(json_in):
+    json_out = None
+    if len(json_in) == 1:
+        try:
+            json_out = json.loads(json_in[0])
+        except json.JSONDecodeError as e:
+            pass
+    return json_out

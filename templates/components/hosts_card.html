@@ -1,0 +1,21 @@
+<div class="col-md-4 py-md-2 ps-md-4 pe-md-2 my-2 border rounded d-flex flex-column">
+	<div class="d-flex flex-row justify-content-between">
+		<div class="fw-bold">
+			Equipos
+		</div>
+		<div>
+			<a class="btn rounded border-1 btn-outline-warning" href="{{url_for('host_inventory.re_scan', page_from=request.endpoint)}}"><i class="bi bi-arrow-clockwise"></i></a>
+		</div>
+	</div>
+	<div class="d-flex flex-row justify-content-center py-md-3">
+		<div>
+			{{ list_pcs|length }}
+		</div>
+	</div>
+	<div class="d-flex flex-row justify-content-start">
+		<div>
+			última actualización: 07/10/2023
+
+		</div>
+	</div>
+</div>

@@ -3,25 +3,14 @@
 {% block content %}
 <div class="row">
 	<h2 class="text-center mb-3">Lista de equipos en esta red</h2>
-	<div class="d-flex justify-content-between">
-		<h5><span class="badge bg-secondary px-3">{{ list_hosts|length }}</span></h5>
-		<a class="btn btn-danger" href="{{url_for('host_inventory.re_scan')}}">Regenerar lista</a>
+</div>
+<div class="row p-md-4 rounded max-height ">
+	<div class="col-md-6 flex flex-column">
+		{% include 'components/network.html' %}
+		{% include 'components/hosts_card.html' %}
 	</div>
 </div>
-<table class="table table-bordered my-2">
-	<thead>
-		<tr>
-			<th scope="col">Nombre</th>
-			<th scope="col">Dirección IP</th>
-		</tr>
-	</thead>
-	<tbody>
-		{% for host in list_hosts %}
-		<tr>
-			<td>PC - {{host.name}}</td>
-			<td>{{host.ip}}</td>
-		</tr>
-		{% endfor %}
-	</tbody>
-</table>
+<div class="row p-md-4 my-2" >
+	{% include 'components/hosts_table.html' %}
+</div>
 {% endblock %}
