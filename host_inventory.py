@@ -41,12 +41,7 @@ def list_host():
             file.write(json.dumps(list_hosts))
     return list_hosts
     
-@host_inventory_bp.route('/re_scan')
-def re_scan():
-    path_file=get_local_path() + '/database/'+ get_network().replace('.','_') + '.json'
-    if os.path.isfile(path_file):
-        os.remove(path_file)
-    return redirect(url_for('host_inventory.index'))
+
 
 @host_inventory_bp.route('/')
 def index():
