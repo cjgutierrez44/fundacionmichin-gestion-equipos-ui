@@ -1,3 +1,4 @@
+from flask import make_response, jsonify
 import os
 import socket
 import json
@@ -23,7 +24,6 @@ def get_network():
 
 def get_host_name(ip_address):
     try:
-    
         hostname, _, _ = socket.gethostbyaddr(ip_address)
         return hostname
     except Exception as e:
@@ -37,3 +37,19 @@ def json_str_to_json_list(json_in):
         except json.JSONDecodeError as e:
             pass
     return json_out
+
+
+def process_request(function_result = True, response_msg = 'Tabajo terminado. (pensar algo mejor)'):
+    data = {
+        'status_code' : '',
+        'response': ''
+    }
+
+    if function_result:
+        data['status_code'] = 200
+        data['response'] = response_msg
+    else:
+        data['status_code'] = 500
+        data['response'] = 'Ha ocurrido un error durante el proceso, intentelo más tarde.'
+
+    return make_response(jsonify(data), data['status_code'], {'Content-Type': 'application/json'})
