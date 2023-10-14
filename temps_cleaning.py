@@ -2,7 +2,7 @@ import json
 import os
 import winrm
 from flask import Blueprint, render_template
-from utils import get_network,get_local_path,get_pc_ip
+from utils import get_network,get_local_path,get_pc_ip, process_request
 
 temps_cleaning_bp = Blueprint('temps_cleaning', __name__)
 
@@ -55,7 +55,7 @@ def index():
     try:
         clean_temp_files()
     except Exception as e:
-        return 'Ha ocurrido un error durante el proceso, intentelo mas tarde', 500
+        return process_request(function_result = False)
 
-    return 'Tabajo terminado (pensar algo mejor)', 200
+    return process_request(function_result = True, response_msg = 'Se han borrado los archivos temporales.')
 

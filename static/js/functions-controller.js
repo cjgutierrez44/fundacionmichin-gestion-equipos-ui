@@ -1,35 +1,29 @@
 const TEMPS_CLEANING_BTN = document.getElementById('temps_cleaning_btn');
+const UPDATES_INSTALLER_BTN = document.getElementById('updates_installer_btn');
 
 TEMPS_CLEANING_BTN.addEventListener('click', function(e){
-	execBackFunction(e, functions.TEMPS_CLEANING)
+	execBackFunction(e, functions.TEMPS_CLEANING, 'Limpiando temporales');
+});
+
+UPDATES_INSTALLER_BTN.addEventListener('click', function(e){
+	execBackFunction(e, functions.UPDATES_INSTALLER, 'Instalando actualizaciones');
 });
 
 functions = {
-	'TEMPS_CLEANING': '/temps_cleaning'
+	'TEMPS_CLEANING': '/temps_cleaning',
+	'UPDATES_INSTALLER': '/updates_installer'
 }
 
-function execBackFunction(e, url){
+function execBackFunction(e, url, btnText){
 	const ORIGINAL_TEXT = e.target.innerText
-	setLoaderOnButton(e.target, "Limpiando temporales");
+	setLoaderOnButton(e.target, btnText);
 	fetch(url).then(response => {
-		if (response.ok) {
-			
-			const contentType = response.headers.get('content-type');
-			if (contentType && contentType.includes('application/json')) {
-				return response.json();
-			} else {
-				mostrarToast('OK', 'Trabajo terminado. (pensar algo mejor)');
-			}
-		} else {
-			mostrarToast('ERR', 'Ha ocurrido un error durante el proceso, intentelo mas tarde.');
-		}
-		resetButtonText(e.target, ORIGINAL_TEXT);
+		return response.json();
 	})
 	.then(data => {
-		console.log('Datos obtenidos:', data);
-	})
-	.catch(error => {
-		console.error('Error:', error.message);
+		mostrarToast(data['status_code'], data['response']);
+	}).finally(()=>{
+		resetButtonText(e.target, ORIGINAL_TEXT);
 	});
 }
 
@@ -47,10 +41,13 @@ function resetButtonText(button, text){
 function mostrarToast(type, text) {
 	var toast = document.getElementById('miToast');
 	toast.innerHTML = text;
+	toast.classList.remove('alert-success');
+	toast.classList.remove('alert-danger');
+	toast.classList.remove('alert-info');
 	toast.classList.add('show');
-	if (type == 'OK') {
+	if (type == 200) {
 		toast.classList.add('alert-success');
-	}else if (type == 'ERR'){
+	}else if (type == 500){
 		toast.classList.add('alert-danger');
 	}else{
 		toast.classList.add('alert-info');

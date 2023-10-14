@@ -1,24 +1,21 @@
 {% extends 'base.html' %}
 {% block title %}Inicio{% endblock %}
 {% block content %}
-<div class="container-fluid px-md-4 py-md-3 border rounded">
-	<div class="row px-md-4 my-3">
-		<h1>Administración de Red</h1>
-		<p>Gestion y mentenimiento de equipos: sede X.</p>
+<div class="row px-md-4 my-3">
+	<h1>Administración de Red</h1>
+	<p>Gestion y mentenimiento de equipos: sede X.</p>
+</div>
+<div class="row p-md-4 rounded max-height ">
+	<div class="col-md-6 flex flex-column">
+		{% include 'components/network.html' %}
+		{% include 'components/hosts_card.html' %}
 	</div>
-	<div class="row p-md-4 rounded max-height ">
-		<div class="col-md-6 flex flex-column">
-			{% include 'components/network.html' %}
-			{% include 'components/hosts_card.html' %}
-		</div>
-		<div class="col-md-6 p-md-4 border rounded  height-100 overflow-auto">
-			{% include 'components/menu_functions.html' %}
-		</div>
+	<div class="col-md-6 p-md-4 border rounded  height-100 overflow-auto">
+		{% include 'components/menu_functions.html' %}
 	</div>
-	<div class="row p-md-4 my-2" >
-		<h4>Inventario de equipos</h4>
-		{% include 'components/hosts_table.html' %}
-	</div>
-
+</div>
+<div class="row p-md-4 my-2" >
+	<h4>Inventario de equipos</h4>
+	{% include 'components/hosts_table.html' %}
 </div>
 {% endblock %}
