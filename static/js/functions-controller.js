@@ -15,13 +15,19 @@ function setAppUninstall(host, appId){
 	functions.UNINSTALL_APP = "/app_uninstaller/host/" + host + "/app_id/" + appId;
 }
 
+function getButton(element){
+	if(element.tagName == 'I'){
+		return element.parentElement;
+	}else {
+
+		return element;
+	}
+}
+
 async function execBackFunction(e, url, btnText) {
-    const ORIGINAL_TEXT = e.target.innerHTML;
-    if(e.target.tagName == 'I'){
-    	setLoaderOnButton(e.target.parentElement, btnText);
-    }else {
-    	setLoaderOnButton(e.target, btnText);
-    }
+    const BUTTON = getButton(e.target);
+    const ORIGINAL_TEXT = BUTTON.innerHTML;
+    setLoaderOnButton(BUTTON, btnText);
     try {
         const response = await fetch(url);
         const data = await response.json();
@@ -29,7 +35,7 @@ async function execBackFunction(e, url, btnText) {
     } catch (error) {
         console.error('Error:', error);
     } finally {
-        resetButtonText(e.target, ORIGINAL_TEXT);
+	    resetButtonText(BUTTON, ORIGINAL_TEXT)
     }
 }
 
