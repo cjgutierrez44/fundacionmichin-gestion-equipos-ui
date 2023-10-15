@@ -45,7 +45,7 @@ def process_request(function_result = True, response_msg = 'Tabajo terminado. (p
         'response': ''
     }
 
-    if function_result:
+    if  function_result:
         data['status_code'] = 200
         data['response'] = response_msg
     else:

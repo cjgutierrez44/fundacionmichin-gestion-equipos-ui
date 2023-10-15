@@ -48,8 +48,8 @@
    <div class="container-fluid px-md-4 py-md-3 border rounded">
       {% block content %}{% endblock %}
    </div>
-   <script type="text/javascript" src="{{ url_for('static', filename='js/functions-controller.js') }}"></script>
-
+   <script type="module" src="{{ url_for('static', filename='js/functions-controller.js') }}"></script>
+   {% block scripts %}{% endblock %}
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
@@ -58,7 +58,7 @@
 
 <script>
   $(document).ready(function() {
-    $('#miTabla').DataTable();  // Asigna DataTable a la tabla con el id 'miTabla'
+    $('#miTabla').DataTable();
   });
 </script>
 

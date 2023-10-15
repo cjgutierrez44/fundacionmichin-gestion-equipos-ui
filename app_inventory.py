@@ -1,9 +1,11 @@
 import json
 import os
-from flask import Blueprint, render_template
-from utils import get_network,get_local_path,get_pc_ip, json_str_to_json_list
 import winrm
 import codecs
+from flask import Blueprint, render_template
+from utils import get_network,get_local_path,get_pc_ip, json_str_to_json_list
+from updates_inventory import list_updates_host
+
 
 app_inventory_bp = Blueprint('app_inventory', __name__)
 def query_apps(host):
@@ -52,10 +54,19 @@ def get_app_list():
 def index(ip):
     list_apps=get_app_list()
     pc_apps = None
+    pc_updates = None
     for pc in list_apps:
         if pc["ip"] == ip:
             pc_apps = pc
-    return render_template('script_pages/app_inventory.html', pc_apps = pc_apps)
+            pc_updates = list_updates_host(ip)
+    return render_template('script_pages/app_inventory.html', pc_apps = pc_apps, pc_updates = pc_updates)
+
+@app_inventory_bp.route('/re_scan')
+def re_scan():
+    path_file=get_local_path() + '/database/'+ get_network().replace('.','_') + '_apps.json'
+    if os.path.isfile(path_file):
+        os.remove(path_file)
+    get_app_list()
 
 if __name__=='__main__':
     get_app_list()

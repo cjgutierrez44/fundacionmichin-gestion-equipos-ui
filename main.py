@@ -12,7 +12,7 @@ from host_inventory import host_inventory_bp, list_host
 from site_blocker import site_blocker_bp
 
 
-app = Flask(__name__)
+app = Flask(__name__) 
 
 app.register_blueprint(host_inventory_bp, url_prefix='/host_inventory')
 app.register_blueprint(app_inventory_bp, url_prefix='/app_inventory')

@@ -1,30 +1,36 @@
-const TEMPS_CLEANING_BTN = document.getElementById('temps_cleaning_btn');
-const UPDATES_INSTALLER_BTN = document.getElementById('updates_installer_btn');
-
-TEMPS_CLEANING_BTN.addEventListener('click', function(e){
-	execBackFunction(e, functions.TEMPS_CLEANING, 'Limpiando temporales');
-});
-
-UPDATES_INSTALLER_BTN.addEventListener('click', function(e){
-	execBackFunction(e, functions.UPDATES_INSTALLER, 'Instalando actualizaciones');
-});
-
-functions = {
+let functions = {
 	'TEMPS_CLEANING': '/temps_cleaning',
-	'UPDATES_INSTALLER': '/updates_installer'
+	'UPDATES_INSTALLER': '/updates_installer',
+	'UPDATE_PC': '/updates_installer/',
+	'LOAD_UPDATES': '/updates_inventory/re_scan',
+	'UNINSTALL_APP': '/app_uninstaller',
+	'SITE_BLOCKER': '/site_blocker'
 }
 
-function execBackFunction(e, url, btnText){
-	const ORIGINAL_TEXT = e.target.innerText
-	setLoaderOnButton(e.target, btnText);
-	fetch(url).then(response => {
-		return response.json();
-	})
-	.then(data => {
-		mostrarToast(data['status_code'], data['response']);
-	}).finally(()=>{
-		resetButtonText(e.target, ORIGINAL_TEXT);
-	});
+function setHostUpdate(host){
+	functions.UPDATE_PC = "/updates_installer/pc/" + host;
+}
+
+function setAppUninstall(host, appId){
+	functions.UNINSTALL_APP = "/app_uninstaller/host/" + host + "/app_id/" + appId;
+}
+
+async function execBackFunction(e, url, btnText) {
+    const ORIGINAL_TEXT = e.target.innerHTML;
+    if(e.target.tagName == 'I'){
+    	setLoaderOnButton(e.target.parentElement, btnText);
+    }else {
+    	setLoaderOnButton(e.target, btnText);
+    }
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        mostrarToast(data['status_code'], data['response']);
+    } catch (error) {
+        console.error('Error:', error);
+    } finally {
+        resetButtonText(e.target, ORIGINAL_TEXT);
+    }
 }
 
 function setLoaderOnButton(button, text){
@@ -33,7 +39,7 @@ function setLoaderOnButton(button, text){
 }
 
 function resetButtonText(button, text){
-	button.innerText = text;
+	button.innerHTML = text;
 	button.disabled = false;
 }
 
@@ -41,9 +47,7 @@ function resetButtonText(button, text){
 function mostrarToast(type, text) {
 	var toast = document.getElementById('miToast');
 	toast.innerHTML = text;
-	toast.classList.remove('alert-success');
-	toast.classList.remove('alert-danger');
-	toast.classList.remove('alert-info');
+	toast.classList.remove('alert-success', 'alert-danger', 'alert-info');
 	toast.classList.add('show');
 	if (type == 200) {
 		toast.classList.add('alert-success');
@@ -52,8 +56,11 @@ function mostrarToast(type, text) {
 	}else{
 		toast.classList.add('alert-info');
 	}
-	
 	setTimeout(function() {
 		toast.classList.remove('show');
 	}, 2500);
 }
+
+
+export {setHostUpdate, setAppUninstall, functions, execBackFunction};
+
