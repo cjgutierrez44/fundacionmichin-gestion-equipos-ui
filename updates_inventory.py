@@ -2,8 +2,7 @@ import json
 import winrm
 import os
 from flask import Blueprint, render_template
-
-from utils import get_local_path, get_network, get_pc_ip
+from utils import get_local_path, get_network, get_pc_ip, process_request
 
 updates_inventory_bp = Blueprint('updates_inventory', __name__)
 
@@ -44,10 +43,38 @@ def list_updates():
             file.write(json.dumps(updates_x_host))  
     return updates_x_host      
 
+def list_updates_host(ip):
+    list_updates_all = list_updates()
+    pc_updates = None
+    for pc in list_updates_all:
+        if pc["ip"] == ip:
+            pc_updates = pc
+    return pc_updates
+
 @updates_inventory_bp.route('/')
 def index():
-    # list_updates()
-    return render_template('script_pages/updates_inventory.html')
+    try:
+        list_updates()
+    except Exception as e:
+        return process_request(function_result = False)
+
+    return process_request(function_result = True, response_msg = "Listado de actualizaciones actualizado.")
+
+def remove_database_file():
+    path_file=get_local_path() + '/database/'+ get_network().replace('.','_') + '_updates.json'
+    if os.path.isfile(path_file):
+        os.remove(path_file)
+
+@updates_inventory_bp.route('/re_scan')
+def re_scan():
+    remove_database_file()
+    try:
+        list_updates()
+    except Exception as e:
+        return process_request(function_result = False)
+
+    return process_request(function_result = True, response_msg = "Listado de actualizaciones actualizado.")
+    
 
 if __name__=='__main__':
     list_updates()

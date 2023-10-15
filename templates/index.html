@@ -5,7 +5,7 @@
 	<h1>Administración de Red</h1>
 	<p>Gestion y mentenimiento de equipos: sede X.</p>
 </div>
-<div class="row p-md-4 rounded max-height ">
+<div class="row px-md-4 rounded max-height ">
 	<div class="col-md-6 flex flex-column">
 		{% include 'components/network.html' %}
 		{% include 'components/hosts_card.html' %}
@@ -15,7 +15,12 @@
 	</div>
 </div>
 <div class="row p-md-4 my-2" >
-	<h4>Inventario de equipos</h4>
+	<h2>Inventario de equipos</h2>
+	<p>Equipos en esta red.</p>
 	{% include 'components/hosts_table.html' %}
 </div>
+{% endblock %}
+
+{% block scripts %}
+<script type="module" src="{{ url_for('static', filename='js/home-functions.js') }}"></script>
 {% endblock %}

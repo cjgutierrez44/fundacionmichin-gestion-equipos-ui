@@ -2,7 +2,7 @@ import json
 import winrm
 import os
 from flask import Blueprint, render_template
-from utils import get_local_path, get_network, get_pc_ip
+from utils import get_local_path, get_network, get_pc_ip, process_request
 
 site_blocker_bp = Blueprint('site_blocker', __name__)
 
@@ -52,8 +52,13 @@ def site_blocker():
                 
 @site_blocker_bp.route('/')
 def index():
-    # site_blocker()
-    return render_template('script_pages/site_blocker.html')     
+    try:
+        site_blocker()
+    except Exception as e:
+        return process_request(function_result = False)
+
+    return process_request(function_result = True, response_msg = 'Se han bloqueado los sitios web.')
+   
 
 if __name__ =='__main__':
     site_blocker()

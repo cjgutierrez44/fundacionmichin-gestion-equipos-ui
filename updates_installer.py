@@ -33,26 +33,10 @@ def update_windows():
             if ir['updates']:
                 update(host)
 
-def install_updates_on_all_hosts():
-    time.sleep(5)
-    num = random.randint(1, 10)
-    if num % 2 == 0:
-        raise ValueError('No se pudo instalar ninguna actualizacion')
-    return 'OK'
-
-
-def install_updates(ip_address):
-    time.sleep(5)
-    num = random.randint(1, 10)
-    if num % 2 == 0:
-        raise ValueError('No se pudo actualizar este equipo')
-    return 'OK'
-
-
 @updates_installer_bp.route('/')
 def index():
     try:
-        install_updates_on_all_hosts()
+        update_windows()
     except Exception as e:
         print(e)
         return process_request(function_result = False)
@@ -62,7 +46,7 @@ def index():
 @updates_installer_bp.route('/pc/<ip>')
 def install_updates_host(ip):
     try:
-        install_updates(ip)
+        update(host)
     except Exception as e:
         return process_request(function_result = False)
 
