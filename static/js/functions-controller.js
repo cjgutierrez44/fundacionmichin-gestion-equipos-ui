@@ -4,7 +4,8 @@ let functions = {
 	'UPDATE_PC': '/updates_installer/',
 	'LOAD_UPDATES': '/updates_inventory/re_scan',
 	'UNINSTALL_APP': '/app_uninstaller',
-	'SITE_BLOCKER': '/site_blocker'
+	'SITE_BLOCKER': '/site_blocker',
+	'LOAD_APPS': '/app_inventory/re_scan'
 }
 
 function setHostUpdate(host){
