@@ -1,4 +1,4 @@
-import {setHostUpdate, setAppUninstall, functions, execBackFunction} from './functions-controller.js';
+import {setHostUpdate, setAppUninstall, functions, execBackFunction} from './functions-controller.mjs';
 
 const UPDATE_PC_BTN = document.getElementById('update_pc_btn');
 const LOAD_UPDATES_BTN = document.getElementById('load_updates_btn');

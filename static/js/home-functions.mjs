@@ -1,4 +1,4 @@
-import {functions, execBackFunction} from './functions-controller.js';
+import {functions, execBackFunction} from './functions-controller.mjs';
 
 const TEMPS_CLEANING_BTN = document.getElementById('temps_cleaning_btn');
 const UPDATES_INSTALLER_BTN = document.getElementById('updates_installer_btn');
