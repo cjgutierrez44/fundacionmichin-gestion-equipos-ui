@@ -31,7 +31,10 @@ def update_windows():
         for ir in list_hosts:
             host=ir['ip']
             if ir['updates']:
-                update(host)
+                try:
+                    update(host)
+                except Exception as e:
+                    print (e)
 
 @updates_installer_bp.route('/')
 def index():
@@ -45,11 +48,14 @@ def index():
     
 @updates_installer_bp.route('/pc/<ip>')
 def install_updates_host(ip):
+    print (ip)
     try:
-        update(host)
+        update(ip)
     except Exception as e:
         return process_request(function_result = False)
 
     return process_request(function_result = True, response_msg = "Equipo actualizado.")
 
-
+if __name__=='__main__':
+    update('192.168.20.4')
+#

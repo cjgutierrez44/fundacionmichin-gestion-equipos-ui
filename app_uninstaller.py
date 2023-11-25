@@ -20,10 +20,10 @@ def app_unistall(host, app_id):
 @app_uninstaller_bp.route('/host/<host>/app_id/<app_id>')
 def index(host, app_id):
     try:
-        app_unistall(host, app_id)
+        app_unistall(host, app_id[1:-1])
     except Exception as e:
         return process_request(function_result = False)
     return process_request(function_result = True, response_msg = "Listado de actualizaciones actualizado.")
 
 if __name__=='__main__':
-    app_unistall('192.168.20.8',)
+    app_unistall('172.20.10.10','2D9D28CD-84DE-4DC7-BAD2-CA5505324049')

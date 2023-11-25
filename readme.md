@@ -23,8 +23,9 @@ _Para el correcto funcionamiento de este software se debe tener las siguientes c
 
 *_Los equipos ha intervenir deben contar con un usuario local con privilegios de administrador y agregarlo al grupo de administradores, se sugiere crear uno con los comandos siguientes_
 ```PowerShell
-New-LocalUser -Name <username> -Password (ConvertTo-SecureString -AsPlainText "<userpassword>" -Force -AccountNeverExpires -UserMayNotChangePassword
+New-LocalUser -Name support -Password (ConvertTo-SecureString -AsPlainText "support12345" -Force) -AccountNeverExpires -UserMayNotChangePassword -PasswordNeverExpires
 Add-LocalGroupMember -Group "Administrators" -Member support
+Add-LocalGroupMember -Group "Administradores" -Member support
 ```
 
 *_Se debe agregar la ip de la máquina desde donde se ejecuta a la lista blanca del firewall de cada equipo ha intervenir_

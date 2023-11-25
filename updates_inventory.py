@@ -34,11 +34,14 @@ def list_updates():
         with open(path_file + '.json', "r") as file:
             list_hosts = json.load(file)
         for ir in list_hosts:
-            host=ir['ip']
-            updates_x_host.append({'ip':ir['ip']
-                                  ,'host_name':ir['name']
-                                  ,'updates':get_updates(host)
-                                  })
+            try:
+                host=ir['ip']
+                updates_x_host.append({'ip':ir['ip']
+                                    ,'host_name':ir['name']
+                                    ,'updates':get_updates(host)
+                                    })
+            except Exception as e:
+                print (e)
         with open(path_file + '_updates.json', "w") as file:
             file.write(json.dumps(updates_x_host))  
     return updates_x_host      

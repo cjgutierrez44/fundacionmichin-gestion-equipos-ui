@@ -18,8 +18,13 @@ def clean(host):
                     """
     result = session.run_ps(powershell_script) 
     powershell_script = '''
-                        $tempFolder = [System.IO.Path]::GetTempPath()
-                        Remove-Item "$tempFolder\*" -Force -Recurse
+                        $usersPath = "C:\\Users"
+                            Get-ChildItem -Path $usersPath -Directory | ForEach-Object {
+                                $tempPath = Join-Path $_.FullName "AppData\\Local\\Temp"
+                                if (Test-Path $tempPath) {
+                                    Remove-Item "$tempPath\*" -Force -Recurse -ErrorAction SilentlyContinue
+                                }
+                            }
                      '''
     result = session.run_ps(powershell_script) 
     powershell_script = '''
@@ -37,7 +42,8 @@ def clean(host):
     result = session.run_ps(powershell_script) 
                      
     if result.status_code == 0:
-        decoded_output = result.std_out.decode('latin-1').strip('\x00\r\n').replace('\r\n','')
+        decoded_output = result.std_out
+        
 
 def clean_temp_files():
     file_database=get_network()
@@ -48,7 +54,10 @@ def clean_temp_files():
             list_hosts = json.load(file)
         for ir in list_hosts:
             host=ir['ip']
-            clean(host)
+            try:
+                clean(host)
+            except Exception as e:
+                print (e)
 
 @temps_cleaning_bp.route('/')
 def index():
@@ -56,6 +65,7 @@ def index():
         clean_temp_files()
     except Exception as e:
         return process_request(function_result = False)
-
     return process_request(function_result = True, response_msg = 'Se han borrado los archivos temporales.')
 
+if __name__=='__main__':
+    clean_temp_files()

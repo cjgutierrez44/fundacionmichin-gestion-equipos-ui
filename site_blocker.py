@@ -6,50 +6,58 @@ from utils import get_local_path, get_network, get_pc_ip, process_request
 
 site_blocker_bp = Blueprint('site_blocker', __name__)
 
-def block(host,content):
-    applications_list=[]
+def block(host):
     if host==get_pc_ip():
         session = winrm.Session(f'http://{host}:5985/wsman',auth=('support', 'support12345'))
     else:
         session = winrm.Session(f'http://{host}:5985/wsman',auth=('support', 'support12345'),transport='ntlm')
     x=0
+    url_hosts_file='https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts'
+    powershell_script='''
+        reg add "HKLM\\SYSTEM\\CurrentControlSet\\services\\Dnscache" /v Start /t REG_DWORD /d 4 /f
+        '''
+    result = session.run_ps(powershell_script) 
     powershell_script = f'''
-                        Set-Content -Path C:\\Windows\\System32\\drivers\\etc\\hosts -Value "# DNS Filtering"
-                            '''
-    result = session.run_ps(powershell_script)  
-    while x<len(content): 
-        new_hosts_content='\n'.join(content[x:x+20])
-        powershell_script = f'''
-                            Add-Content -Path C:\\Windows\\System32\\drivers\\etc\\hosts -Value "{new_hosts_content}"
-                            '''
-        result = session.run_ps(powershell_script)  
-        x+=20
-    powershell_script = f'''
-                        ipconfig /flushdns
-                            '''
-    result = session.run_ps(powershell_script)  
+                    $url = "{url_hosts_file}"
+        $hostsPath = "C:\\Windows\\System32\\drivers\\etc"
+        $originalHosts = Join-Path $hostsPath "hosts"
+        $backupHosts = Join-Path $hostsPath "hosts.backup"
+
+        # Crear una copia de seguridad del archivo hosts original
+        if (Test-Path $originalHosts) {{
+            Copy-Item -Path $originalHosts -Destination $backupHosts -Force
+        }}
+
+        # Descargar el archivo hosts
+        Invoke-WebRequest -Uri $url -OutFile $originalHosts -UseBasicParsing
+
+        # Leer el contenido del archivo hosts, reemplazar 0.0.0.0 por 192.168.1.1 y guardar los cambios
+        $content = Get-Content $originalHosts -Raw
+        $modifiedContent = $content.Replace('0.0.0.0', '192.168.1.1')
+        Set-Content -Path $originalHosts -Value $modifiedContent
+                    '''
+    result = session.run_ps(powershell_script)
+    if result.status_code != 0:
+        print(f"Error en el host {host}: {result.std_err}")
+    else:
+        print(f"Archivo hosts actualizado con éxito en {host}")  
                  
 def site_blocker():
     file_database=get_network()
     path_file=get_local_path() + '/database/'
     blocked_hosts=[]
-    with open(path_file + 'contenidoadulto.txt', "r") as file:
-        for linea in file:
-            blocked_hosts.append(linea.strip())
-    with open(path_file + 'apuestas.txt', "r") as file:
-        for linea in file:
-            blocked_hosts.append(linea.strip())
-    with open(path_file + 'social.txt', "r") as file:
-        for linea in file:
-            blocked_hosts.append(linea.strip())
+    
     path_file=path_file + file_database.replace('.','_')    
     if os.path.isfile(path_file + '.json'):
         with open(path_file + '.json', "r") as file:
             list_hosts = json.load(file)
             for ir in list_hosts:
-                host=ir['ip']
-                block(host,blocked_hosts)
-                
+                try:
+                    host=ir['ip']
+                    block(host)
+                except Exception as e:
+                    print (e)
+                    
 @site_blocker_bp.route('/')
 def index():
     try:
@@ -59,7 +67,6 @@ def index():
 
     return process_request(function_result = True, response_msg = 'Se han bloqueado los sitios web.')
    
-
 if __name__ =='__main__':
     site_blocker()
     

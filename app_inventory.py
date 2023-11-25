@@ -43,9 +43,12 @@ def get_app_list():
             list_hosts = json.load(file)
         for ir in list_hosts:
             host=ir['ip']
-            apps_x_host.append({'ip':ir['ip']
-                               ,'host_name':ir['name']
-                               ,'apps':query_apps(host)})
+            try:
+                apps_x_host.append({'ip':ir['ip']
+                                ,'host_name':ir['name']
+                                ,'apps':query_apps(host)})
+            except Exception as e:
+                print (e)
         with open(path_file + '_apps.json', "w") as file:
             file.write(json.dumps(apps_x_host))        
     return apps_x_host
