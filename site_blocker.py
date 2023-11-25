@@ -7,6 +7,9 @@ from utils import get_local_path, get_network, get_pc_ip, process_request
 site_blocker_bp = Blueprint('site_blocker', __name__)
 
 def block(host):
+
+    info_page_ip = get_pc_ip()
+
     if host==get_pc_ip():
         session = winrm.Session(f'http://{host}:5985/wsman',auth=('support', 'support12345'))
     else:
@@ -33,7 +36,7 @@ def block(host):
 
         # Leer el contenido del archivo hosts, reemplazar 0.0.0.0 por 192.168.1.1 y guardar los cambios
         $content = Get-Content $originalHosts -Raw
-        $modifiedContent = $content.Replace('0.0.0.0', '192.168.1.1')
+        $modifiedContent = $content.Replace('0.0.0.0', '{info_page_ip}')
         Set-Content -Path $originalHosts -Value $modifiedContent
                     '''
     result = session.run_ps(powershell_script)
