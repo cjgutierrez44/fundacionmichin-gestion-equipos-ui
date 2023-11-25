@@ -8,7 +8,9 @@ from utils import get_local_path,get_network,get_host_name, json_str_to_json_lis
 host_inventory_bp = Blueprint('host_inventory', __name__)
 
 def scan_network(ip_range):
-    nm = nmap.PortScanner()
+    nmap_path = [r"C:\Program Files (x86)\Nmap\nmap.exe",]
+    nm = nmap.PortScanner(nmap_search_path=nmap_path)
+    
     nm.scan(hosts=ip_range, arguments="-O -p 445")
     added=False
     pcs=[]
@@ -56,3 +58,5 @@ def re_scan(page_from = 'index'):
         os.remove(path_file)
         return redirect(url_for(page_from))
 
+if __name__=='__main__':
+    list_host()
