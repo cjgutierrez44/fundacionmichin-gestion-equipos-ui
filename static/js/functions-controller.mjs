@@ -8,6 +8,10 @@ let functions = {
 	'LOAD_APPS': '/app_inventory/re_scan'
 }
 
+function setList(list){
+	functions.SITE_BLOCKER = '/site_blocker/' + list;
+}
+
 function setHostUpdate(host){
 	functions.UPDATE_PC = "/updates_installer/pc/" + host;
 }
@@ -68,6 +72,28 @@ function mostrarToast(type, text) {
 	}, 2500);
 }
 
+async function execFetch(url, method = 'GET', params = {}) {
+    let config = {
+        method: method,
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    };
 
-export {setHostUpdate, setAppUninstall, functions, execBackFunction};
+
+    const queryString = new URLSearchParams(params).toString();
+    url = queryString ? `${url}?${queryString}` : url;
+
+    try {
+        const response = await fetch(url, config);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error:', error);
+    } finally {
+        //console.log('OK');
+    }
+}
+
+export {setHostUpdate, setAppUninstall, setList,functions, execBackFunction, execFetch};
 

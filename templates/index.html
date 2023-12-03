@@ -1,6 +1,65 @@
 {% extends 'base.html' %}
 {% block title %}Inicio{% endblock %}
 {% block content %}
+<div class="modal modal-xl fade" id="siteBlockerModal" tabindex="-1" aria-labelledby="siteBlockerModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="siteBlockerModalLabel">Bloqueador de sitios</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="flex flex-column my-3">
+					<div class="row flex flex-row">
+						<h5 class="mb-3">Redirección</h5>
+						<p class="mb-3">Por defecto, los usuarios serán redirigidos a la dirección <strong>{{infoPage}}</strong> (Servidor local).</p>
+					</div>
+					<h5 class="my-3">Listado de sitios bloqueados</h5>
+					<div class="btn-group" role="group" aria-label="Opciones">
+						<input type="radio" class="btn-check" checked name="options" id="option1" autocomplete="off">
+						<label class="btn btn-outline-primary" for="option1">Genérico</label>
+
+						<input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+						<label class="btn btn-outline-primary" for="option2">Personalizado</label>
+					</div>
+					<div class="my-3">
+						<div id="generic-list">
+							<p>Por defecto, la aplicación utiliza un listado predeterminado que incluye más de 50,000 sitios prohibidos para bloquear. Este listado está diseñado para brindar una protección integral. Sin embargo, si tienes necesidades específicas o prefieres personalizar el istado, puedes seleccionar la opción 'Personalizado' y agregar o modificar los sitios según tus requisitos.</p>
+						</div>
+						<div id="custom-list" class="d-none">
+							<p>A continuación, encontrarás un listado personalizado de sitios bloqueados. Aquí puedes ajustar y controlar qué sitios deseas agregar o eliminar según tus preferencias y necesidades específicas.</p>
+							<div class="form-group row">
+								<div class="col">
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="siteToBlock" placeholder="Sitio a bloquear">
+										<label for="siteToBlock">Sitio a bloquear</label>
+									</div>
+								</div>
+								<div class="col">
+									<button type="button" id="sites_blocker_add_btn" class="btn btn-primary">Agregar</button>
+								</div>
+							</div>
+							<table class="table">
+								<thead>
+									<th>Sitio</th>
+									<th></th>
+								</thead>
+								<tbody id="bannedSitesTBody">	
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+				<button type="button" id="sites_blocker_btn" class="btn btn-primary">Bloquear sitios</button>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="row px-md-4 my-3">
 	<h1>Administración de Red</h1>
 	<p>Gestion y mentenimiento de equipos: sede X.</p>
@@ -23,4 +82,10 @@
 
 {% block scripts %}
 <script type="module" src="{{ url_for('static', filename='js/home-functions.mjs') }}"></script>
+
+<script>
+
+
+</script>
+
 {% endblock %}

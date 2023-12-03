@@ -45,21 +45,27 @@
       Alerta
    </div>
    <div class="container-fluid px-md-4 py-md-3 border rounded">
-      {% block content %}{% endblock %}
+      {% block content %}
+
+      {% endblock %}
    </div>
-   <script type="module" src="{{ url_for('static', filename='js/functions-controller.mjs') }}"></script>
-   {% block scripts %}{% endblock %}
 
-   <script src="{{ url_for('static', filename='js/jquery-3.3.1.js') }}"></script>
-   <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.dataTables.min.js') }}"></script>
-   <script type="text/javascript" src="{{ url_for('static', filename='js/dataTables.bootstrap4.min.js') }}"></script>
+<script type="module" src="{{ url_for('static', filename='js/functions-controller.mjs') }}"></script>
 
 
-   <script>
-      $(document).ready(function() {
-         $('#miTabla').DataTable();
-      });
-   </script>
+<script src="{{ url_for('static', filename='js/jquery-3.3.1.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.dataTables.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/dataTables.bootstrap4.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+{% block scripts %}{% endblock %}
+
+<script>
+   $(document).ready(function() {
+      $('#miTabla').DataTable();
+   });
+</script>
+
 
 </body>
 </html>

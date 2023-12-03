@@ -33,7 +33,7 @@ def index1():
 
 @app.route('/')
 def index():
-    return render_template('index.html', list_pcs = list_host())
+    return render_template('index.html', list_pcs = list_host(), infoPage = get_pc_ip())
 
 @app.errorhandler(404)
 def not_found_error(error):
