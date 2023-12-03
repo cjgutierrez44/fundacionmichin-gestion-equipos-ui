@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Blueprint
+from flask import Flask, render_template, Blueprint,Response
 import webbrowser
 import threading
 
@@ -39,6 +39,13 @@ def index():
 def not_found_error(error):
     return render_template('404.html'), 404
 
+
+@app1.route('/hosts')
+def servir_archivo():
+    ruta_al_archivo = get_local_path() + '/static/hosts'
+    with open(ruta_al_archivo, 'r') as archivo:
+        contenido = archivo.read()
+    return Response(contenido, content_type='text/plain')
 
 def open_browser():
     webbrowser.open("http://127.0.0.1:5000/")

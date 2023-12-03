@@ -15,7 +15,9 @@ ff02::3 ip6-allhosts
 
 
 #CUSTOM_LIST
+192.168.1.7 ucatolica.edu.co
 
-0.0.0.0 twitter.com
-0.0.0.0 facebook.com
-0.0.0.0 youtube.com
+192.168.1.7 ck.getcookiestxt.com
+192.168.1.7 twitter.com
+192.168.1.7 facebook.com
+192.168.1.7 youtube.com
