@@ -118,9 +118,9 @@ def block(host, list):
         Invoke-WebRequest -Uri $url -OutFile $originalHosts -UseBasicParsing
 
         # Leer el contenido del archivo hosts, reemplazar 0.0.0.0 por 192.168.1.1 y guardar los cambios
-        #$content = Get-Content $originalHosts -Raw
-        #$modifiedContent = $content.Replace('0.0.0.0', '{info_page_ip}')
-        #Set-Content -Path $originalHosts -Value $modifiedContent
+        $content = Get-Content $originalHosts -Raw
+        $modifiedContent = $content.Replace('0.0.0.0', '{info_page_ip}')
+        Set-Content -Path $originalHosts -Value $modifiedContent
                     '''
     result = session.run_ps(powershell_script)
     if result.status_code != 0:
