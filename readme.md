@@ -41,6 +41,10 @@ winrm set winrm/config/service '@{AllowUnencrypted="true"}'
 winrm set winrm/config/service/auth '@{Basic="true"}'
 Set-Item WSMan:\localhost\Client\TrustedHosts -Value 192.168.1.100
 ```
+*_Es recomendable activar el máximo nivel de protección de cuentas de usuario para que notifique siempre que se quiera instalar alguna aplicación_
+```PowerShell
+Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System" -Name "ConsentPromptBehaviorAdmin" -Value 2
+```
 # Funcionalidades
 
 + ## Listar equipos en la red
