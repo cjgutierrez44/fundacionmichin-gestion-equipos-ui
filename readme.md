@@ -32,7 +32,7 @@ Add-LocalGroupMember -Group "Administradores" -Member support
 ```PowerShell
 New-NetFirewallRule -DisplayName "Permitir IP Mantenimiento" -Direction Inbound -Action Allow -Protocol Any -RemoteAddress 192.168.1.100
 ```
-*_Se debe habilitar en cada equipo ha intervenir PowerShell Remoting (WinRM) para poderlos controlar de forma remota._
+*_Se debe habilitar en cada equipo a intervenir PowerShell Remoting (WinRM) para poderlos controlar de forma remota._
 _Además se debe configurar los metodos de autenticación, y agregar a la lista de confianza la ip del host que ejecuta_
 ```PowerShell
 Enable-PSRemoting -Force
